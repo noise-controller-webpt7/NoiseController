@@ -227,9 +227,10 @@ header {
   display: flex;
   align-items: center;
   color: white;
-  border: 1px solid black;
-  border-radius: 10px;
+  border: 2px dashed black;
+  border-radius: 15px;
   font-family: 'Roboto';
   padding: 1%;
   cursor: pointer;
+  margin: 3px 0px;
 }
