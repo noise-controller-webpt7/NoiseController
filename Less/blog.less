@@ -1,0 +1,41 @@
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 80%;
+    background-color: @secondaryColor;
+    border-radius: 30px;
+    justify-content: center;
+
+    section {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto;
+        margin: 1% 3%;
+        div{
+            background-color: @thirdColor;
+            margin: 0% 2%;
+            width: 35%;
+            padding: 2%;
+            text-align: center;
+            
+            .author {
+                margin: 5% 0%;
+                background-color: @secondaryColor;
+                border-radius: 50%;
+                text-align: center;
+                padding: 2px;
+            }
+
+            .date {
+                margin: 5% 0%;
+                text-align: center;
+            }
+
+            p {
+                color: black;
+                text-align: left;
+            }
+        }
+    }
+}

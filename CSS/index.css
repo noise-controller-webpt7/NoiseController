@@ -177,3 +177,40 @@ header {
   height: 200px;
   border-radius: 20px;
 }
+.blogContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  width: 80%;
+  background-color: lightblue;
+  border-radius: 30px;
+  justify-content: center;
+}
+.blogContainer section {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  margin: 1% 3%;
+}
+.blogContainer section div {
+  background-color: white;
+  margin: 0% 2%;
+  width: 35%;
+  padding: 2%;
+  text-align: center;
+}
+.blogContainer section div .author {
+  margin: 5% 0%;
+  background-color: lightblue;
+  border-radius: 50%;
+  text-align: center;
+  padding: 2px;
+}
+.blogContainer section div .date {
+  margin: 5% 0%;
+  text-align: center;
+}
+.blogContainer section div p {
+  color: black;
+  text-align: left;
+}
