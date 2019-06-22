@@ -1,5 +1,5 @@
 class TabLink {
-    constructor(tabElement){
+    constructor(tabElement) {
         this.tabElement = tabElement;
         this.tabData = this.tabElement.dataset.tab;
         console.log(this.tabData)
@@ -10,7 +10,18 @@ class TabLink {
             this.blogs = document.querySelectorAll(`.blog[data-tab="${this.tabData}"]`) // selects the blogs with the same data-tab
         }
 
-        this.blogs = Array.from(this.blogs).map(item => console.log(item))
+        this.blogs = Array.from(this.blogs).map(item => new TabBlog(item))
+        this.blogs.forEach(blog => blog.selectBlog());
+    }
+}
+
+class TabBlog {
+    constructor(blogElement) {
+        this.blogElement = blogElement;
+    }
+
+    selectBlog() {
+    this.blogElement.style.display = "block";
     }
 }
 
