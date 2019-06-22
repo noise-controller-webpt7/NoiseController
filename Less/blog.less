@@ -1,0 +1,67 @@
+.blogContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 1% auto;
+    width: 80%;
+    background-color: @secondaryColor;
+    border-radius: 30px;
+
+    section {
+        display: flex;
+        justify-content: center;
+        margin: 1% auto;
+        width: 80%;
+        flex-wrap: wrap;
+
+        .blog {
+            display: felx;
+            background-color: @thirdColor;
+            margin: 2% 2%;
+            width: 25%;
+            padding: 2%;
+            text-align: center;
+            
+            .author {
+                display: flex;
+                justify-content: center;
+                margin: 5% auto;
+                background-color: @secondaryColor;
+                border-radius: 10px;
+                padding: 2px;
+                width: 50%;
+            }
+
+            .date {
+                margin: 5% 0%;
+                text-align: center;
+            }
+
+            p {
+                color: black;
+                text-align: left;
+            }
+        }
+    }
+}
+
+.tabContainer {
+    display: flex;
+    margin: 0 auto 20px auto;
+    width: 100%;
+    height: 1.5%;
+    justify-content: space-evenly;
+    border-radius: 30px;
+    background-color: gray;
+
+    .tab {
+        display: flex;
+        align-items: center;
+        color: @thirdColor;
+        border: 2px dashed black;
+        border-radius: 15px;
+        font-family: @font;
+        padding: 1%;
+        cursor: pointer;
+        margin: 3px 0px;
+    }
+}
