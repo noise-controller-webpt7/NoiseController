@@ -243,6 +243,7 @@ footer .foot {
   padding: 5% 0 0 0;
   background: #253F3E;
   width: 100%;
+  margin-top: 2%;
 }
 footer .foot .foot-left {
   display: flex;
@@ -432,7 +433,7 @@ header {
 .abtContainer .abt-mainContent .abt-top {
   width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   padding: 10%;
   background: #253F3E;
@@ -547,19 +548,19 @@ header {
 }
 .contactContainer .contact {
   width: 70%;
-  margin: 0 20px;
   padding: 40px;
-  background: #61C2A1;
-  border-radius: 25px;
+  background: #DECEB6;
 }
 .contactContainer .contact h1 {
   font-family: 'Roboto';
+  color: #253F3E;
   font-size: 3.5rem;
   margin-top: 30px;
   text-align: center;
 }
 .contactContainer .contact h2 {
   font-family: 'Roboto';
+  color: #800080;
   font-size: 2.5rem;
   margin-top: 10px;
   text-align: center;
@@ -567,7 +568,7 @@ header {
 .contactContainer .contact p {
   font-family: 'Roboto';
   font-size: 1.5rem;
-  color: white;
+  color: #800080;
   text-align: center;
 }
 .contactContainer .contact form {
@@ -579,14 +580,14 @@ header {
   padding: 10px 10px;
   margin: 20px 0;
   border-radius: 10px;
-  background: #DECEB6;
+  background: bisque;
   color: #800080;
   font-size: 1.3rem;
 }
 .contactContainer .contact form input:focus {
-  background: #253F3E;
-  color: #DECEB6;
-  border: 2px solid #DECEB6;
+  background: #DECEB6;
+  color: #800080;
+  border: 2px solid #253F3E;
 }
 .contactContainer .contact form input[type="text"],
 .contactContainer .contact form input[type="password"],
@@ -601,16 +602,15 @@ header {
   padding: 10px 15px;
   width: 200px;
   margin: 0 auto;
-  border: 2px solid #800080;
   border-radius: 10px;
-  background: #DECEB6;
+  background: bisque;
   color: #800080;
   cursor: pointer;
   outline: none;
 }
 .contactContainer .contact form button:hover {
   background: #253F3E;
-  color: #DECEB6;
+  color: bisque;
 }
 .contactContainer .contact-side {
   display: flex;
@@ -618,15 +618,23 @@ header {
   margin: 0 auto;
   float: right;
   padding-left: 30px;
-  width: 20%;
+  width: 30%;
   align-items: center;
 }
 .contactContainer .contact-side .box1 {
-  width: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
   align-items: center;
+  background: #253F3E;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  margin-right: 10%;
+  padding: 10% 5%;
 }
 .contactContainer .contact-side .box1 h2 {
   font-family: 'Roboto';
+  color: #DECEB6;
   font-size: 1.8rem;
   margin-top: 10px;
   text-align: center;
@@ -634,28 +642,39 @@ header {
 .contactContainer .contact-side .box1 p {
   font-family: 'Roboto';
   font-size: 1.3rem;
-  color: white;
+  color: #DECEB6;
   text-align: center;
 }
 .contactContainer .contact-side .box1 button,
 .contactContainer .contact-side .box1 .side-btn {
   padding: 5px 5px;
   width: 75px;
-  margin-left: 70px;
-  align-content: center;
-  border: 2px solid #800080;
   border-radius: 10px;
-  background: #800080;
-  color: #DECEB6;
+  background: #DECEB6;
+  color: #253F3E;
   cursor: pointer;
   outline: none;
 }
+.contactContainer .contact-side .box1 .side-btn:hover {
+  background: #800080;
+  color: #DECEB6;
+  border: 1px solid #800080;
+}
 .contactContainer .contact-side .box2 {
-  width: auto;
+  width: 100%;
+  display: flex;
+  flex-flow: column wrap;
   align-items: center;
+  background: #800080;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+  transition: 0.3s;
+  margin-right: 10%;
+  padding: 7% 5%;
+  margin-top: 5%;
 }
 .contactContainer .contact-side .box2 h2 {
   font-family: 'Roboto';
+  color: #DECEB6;
   font-size: 1.8rem;
   margin-top: 10px;
   text-align: center;
@@ -663,21 +682,23 @@ header {
 .contactContainer .contact-side .box2 p {
   font-family: 'Roboto';
   font-size: 1.3rem;
-  color: white;
+  color: #DECEB6;
   text-align: center;
 }
 .contactContainer .contact-side .box2 button,
 .contactContainer .contact-side .box2 .side-btn {
   padding: 5px 5px;
   width: 75px;
-  margin-left: 75px;
-  align-content: center;
-  border: 2px solid #800080;
   border-radius: 10px;
-  background: #800080;
-  color: #DECEB6;
+  background: #DECEB6;
+  color: #253F3E;
   cursor: pointer;
   outline: none;
+}
+.contactContainer .contact-side .box2 .side-btn:hover {
+  background: #253F3E;
+  color: #DECEB6;
+  border: 1px solid #253F3E;
 }
 .blogContainer {
   display: flex;

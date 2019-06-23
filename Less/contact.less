@@ -7,15 +7,13 @@
     padding-right: 20px;
 
     .contact {
-       width: 70%;
-        margin: 0 20px;
+        width: 70%;
         padding: 40px;
-        background: @teal;
-        border-radius: 25px;
-       
+        background: @beige;
 
             h1{
                 font-family: @font;
+                color: @dark;
                 font-size: 3.5rem;
                 margin-top: 30px;
                 text-align: center;
@@ -23,6 +21,7 @@
 
             h2{
                 font-family: @font;
+                color: @purple;
                 font-size: 2.5rem;
                 margin-top: 10px;
                 text-align: center;
@@ -31,7 +30,7 @@
             p{
                 font-family: @font;
                 font-size: 1.5rem;
-                color: @white;
+                color: @purple;
                 text-align: center;
             }
             
@@ -44,14 +43,14 @@
                         padding: 10px 10px; 
                         margin: 20px 0;
                         border-radius: 10px;
-                        background: @beige;
+                        background: bisque;
                         color: @purple;
                         font-size: 1.3rem;
                     }
                 input:focus{
-                    background:@dark;
-                    color: @beige;
-                    border: 2px solid @beige;
+                    background: @beige;
+                    color: @purple;
+                    border: 2px solid @dark;
                 }
 
                 input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[id="msg"], select { 
@@ -62,9 +61,8 @@
                             padding: 10px 15px;
                             width: 200px;
                             margin: 0 auto;
-                            border: 2px solid @purple;
                             border-radius: 10px;
-                            background: @beige;
+                            background: bisque;
                             color: @purple;
                             cursor: pointer;
                             outline: none;
@@ -72,7 +70,7 @@
 // hover not working yet!!!
                         button:hover {
                             background:@dark;
-                            color: @beige;
+                            color: bisque;
                         }
        
         
@@ -87,15 +85,23 @@
         margin: 0 auto;
         float: right;
         padding-left: 30px;
-        width: 20%;
+        width: 30%;
         align-items: center;
 
         .box1 {
-            width: auto;
+            width: 100%;
+            display:flex;
+            flex-flow: column wrap;
             align-items: center;
+            background: @dark;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+            margin-right: 10%;
+            padding: 10% 5%;
 
             h2{
                 font-family: @font;
+                color: @beige;
                 font-size: 1.8rem;
                 margin-top: 10px;
                 text-align: center;
@@ -104,31 +110,44 @@
             p{
                 font-family: @font;
                 font-size: 1.3rem;
-                color: @white;
+                color: @beige;
                 text-align: center;
             }
             button, .side-btn {
                 padding: 5px 5px;
                 width: 75px;
-                margin-left: 70px;
-                align-content: center;
-                border: 2px solid @purple;
                 border-radius: 10px;
-                background: @purple;
-                color: @beige;
+                background: @beige;
+                color: @dark;
                 cursor: pointer;
                 outline: none;
+
+            }
+
+            .side-btn:hover{
+                background: @purple;
+                color: @beige;
+                border: 1px solid @purple;
 
             }
             
         }
 
         .box2 {
-            width: auto;   
+            width: 100%;
+            display:flex;
+            flex-flow: column wrap;
             align-items: center;
+            background: @purple;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+            margin-right: 10%;
+            padding: 7% 5%;
+            margin-top: 5%;
 
             h2{
                 font-family: @font;
+                color: @beige;
                 font-size: 1.8rem;
                 margin-top: 10px;
                 text-align: center;
@@ -137,22 +156,25 @@
             p{
                 font-family: @font;
                 font-size: 1.3rem;
-                color: @white;
+                color: @beige;
                 text-align: center;
             }
-
             button, .side-btn {
                 padding: 5px 5px;
                 width: 75px;
-                margin-left: 75px;
-                align-content: center;
-                border: 2px solid @purple;
+                // border: 2px solid @purple;
                 border-radius: 10px;
-                background: @purple;
-                color: @beige;
+                background: @beige;
+                color: @dark;
                 cursor: pointer;
                 outline: none;
 
+            }
+
+            .side-btn:hover{
+                background: @dark;
+                color: @beige;
+                border: 1px solid @dark;
             }
         }
 
