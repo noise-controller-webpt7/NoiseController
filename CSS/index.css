@@ -243,7 +243,6 @@ footer .foot {
   padding: 5% 0 0 0;
   background: #253F3E;
   width: 100%;
-  margin-top: 2%;
 }
 footer .foot .foot-left {
   display: flex;
@@ -272,7 +271,7 @@ footer .foot .foot-left p {
 footer .foot .foot-left button {
   padding: 10px 5px;
   width: 150px;
-  border: 2px solid #800080;
+  border: 2px solid #DECEB6;
   border-radius: 10px;
   background: #DECEB6;
   color: #800080;
@@ -281,7 +280,7 @@ footer .foot .foot-left button {
 }
 footer .foot .foot-left button:hover {
   background: #800080;
-  border: 2px solid #DECEB6;
+  border: 2px solid #800080;
   color: #DECEB6;
 }
 footer .foot .foot-right {
