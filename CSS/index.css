@@ -131,7 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-image: linear-gradient(to bottom right, #0c68f1, purple);
+  background-image: linear-gradient(to bottom right, #800080, #61C2A1);
 }
 html,
 body {
@@ -145,19 +145,23 @@ h5 {
   font-family: 'Roboto', sans-serif;
 }
 h1 {
-  font-size: 5rem;
+  font-size: 3rem;
 }
 h2 {
-  font-size: 3.2rem;
+  font-size: 2rem;
+  padding-bottom: 10px;
+}
+h3 {
+  font-size: 1.5rem;
   padding-bottom: 10px;
 }
 h4 {
-  font-size: 2.5rem;
+  font-size: 1rem;
   padding-bottom: 10px;
 }
 p {
   line-height: 1.5;
-  font-size: 1.6rem;
+  font-size: 1.2rem;
   padding-bottom: 10px;
 }
 img {
@@ -165,7 +169,7 @@ img {
   height: auto;
 }
 .container {
-  max-width: 1200px;
+  max-width: 100%;
   width: 100%;
   margin: 0 auto;
 }
@@ -176,26 +180,64 @@ img {
   font-display: swap;
   src: local('Roboto'), local('Roboto-Regular'), url(https://fonts.gstatic.com/s/roboto/v19/KFOmCnqEu92Fr1Mu4mxP.ttf) format('truetype');
 }
-header {
+@font-face {
+  font-family: 'Press Start 2P';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Press Start 2P Regular'), local('PressStart2P-Regular'), url(https://fonts.gstatic.com/s/pressstart2p/v7/e3t4euO8T-267oIAQAu6jDQyK3nVivY.ttf) format('truetype');
+}
+.nav-header {
   display: flex;
   flex-direction: row;
+  justify-content: center;
+  height: auto;
+  border-bottom: 1px solid slategray;
   justify-content: space-between;
   align-content: center;
+  width: 100%;
+  margin: 10px 0;
 }
-header .headerText {
-  min-width: 100%;
-  height: 4rem;
+.nav-header h1 {
+  font-size: 2rem;
+  margin-top: 20px;
+  margin-left: 30px;
+  font-family: 'Press Start 2P';
+  color: #61C2A1;
+  justify-content: center;
+  align-content: center;
 }
-header .navContainer {
-  min-width: 100%;
-  height: 3rem;
+.nav-header nav {
   display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  justify-content: center;
+  align-content: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
 }
-header .navContainer nav {
-  color: green;
+.nav-header nav a {
+  font: 'Roboto';
+  color: #DECEB6;
+  text-decoration: none;
+  font-size: 1.5rem;
+  align-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+  padding-right: 80px;
+  justify-content: center;
+  align-content: center;
 }
-header .navContainer nav a {
-  color: red;
+.nav-header nav a:last-child {
+  border: 1px solid #61C2A1;
+  padding: 1.3rem;
+  margin-top: 10px;
+  border-radius: 10px;
+  margin-right: 80px;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
 }
 h1 {
   font-size: 3rem;
@@ -212,7 +254,7 @@ h3 {
 p {
   font-size: 1rem;
   font-family: 'Roboto';
-  color: white;
+  color: #F6F5F0;
 }
 header {
   width: 80%;
@@ -238,6 +280,60 @@ header {
   height: 200px;
   border-radius: 20px;
 }
+.abtContainer {
+  margin: 0 auto;
+  width: 90%;
+}
+.abtContainer .abtHero {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  background: #DECEB6;
+  border-radius: 25px;
+  padding-bottom: 20px;
+}
+.abtContainer .abtHero .hero-text {
+  display: flex;
+  flex-direction: column;
+}
+.abtContainer .abtHero .hero-text h1 {
+  font-size: 3rem;
+  line-height: 1rem;
+  color: #253F3E;
+  font-family: 'Roboto';
+  margin-top: 50px;
+  text-align: center;
+  margin-left: 40px;
+}
+.abtContainer .abtHero .hero-text h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #253F3E;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.abtContainer .abtHero .hero-text p {
+  margin-top: 20px;
+  margin-left: 50px;
+  width: 80%;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto';
+  text-align: center;
+  color: slategrey;
+  width: 90%;
+  justify-content: center;
+  align-content: center;
+}
+.abtContainer .abtHero .abt-hero-img {
+  margin: 30px 50px;
+  padding-top: 20px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 40px;
+}
 .blogContainer {
   display: flex;
   flex-direction: column;
@@ -254,8 +350,8 @@ header {
   flex-wrap: wrap;
 }
 .blogContainer section .blog {
-  display: felx;
-  background-color: white;
+  display: flex;
+  background-color: #F6F5F0;
   margin: 2% 2%;
   width: 25%;
   padding: 2%;
@@ -290,7 +386,7 @@ header {
 .tabContainer .tab {
   display: flex;
   align-items: center;
-  color: white;
+  color: #F6F5F0;
   border: 2px dashed black;
   border-radius: 15px;
   font-family: 'Roboto';
