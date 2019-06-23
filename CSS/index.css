@@ -131,7 +131,7 @@ table {
 }
 html {
   font-size: 62.5%;
-  background-image: linear-gradient(to bottom right, #800080, #61C2A1);
+  background-image: linear-gradient(to bottom right, #800080, #DECEB6);
 }
 html,
 body {
@@ -201,7 +201,7 @@ img {
   font-size: 2rem;
   margin-top: 20px;
   margin-left: 30px;
-  font-family: 'Press Start 2P';
+  font-family: 'Roboto';
   color: #61C2A1;
   justify-content: center;
   align-content: center;
@@ -235,6 +235,22 @@ img {
   align-items: center;
   justify-content: center;
   align-content: center;
+}
+footer .foot {
+  display: flex;
+  flex-flow: row wrap;
+  margin: 70px;
+  justify-content: space-between;
+}
+footer .foot .foot-left {
+  display: flex;
+  flex-flow: column wrap;
+  width: 45%;
+}
+footer .foot .foot-right {
+  display: flex;
+  flex-flow: column wrap;
+  width: 45%;
 }
 h1 {
   font-size: 3rem;
@@ -285,14 +301,15 @@ header {
 }
 .abtContainer .abtHero {
   display: flex;
-  flex-direction: row;
+  flex-flow: row wrap;
   justify-content: space-around;
   width: 100%;
   padding-bottom: 20px;
 }
 .abtContainer .abtHero .hero-text {
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
+  width: 50%;
 }
 .abtContainer .abtHero .hero-text h1 {
   font-size: 3rem;
@@ -314,13 +331,11 @@ header {
 .abtContainer .abtHero .hero-text p {
   margin-top: 20px;
   margin-left: 50px;
-  width: 80%;
   font-size: 1.5rem;
   line-height: 1.8rem;
   font-family: 'Roboto';
   text-align: center;
-  color: slategrey;
-  width: 90%;
+  color: #253F3E;
   justify-content: center;
   align-content: center;
 }
@@ -330,6 +345,48 @@ header {
   justify-content: center;
   align-content: center;
   border-radius: 40px;
+}
+.abtContainer .abt-mainContent {
+  display: flex;
+  flex-flow: row wrap;
+}
+.abtContainer .abt-mainContent .abt-top h3 {
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #253F3E;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.abtContainer .abt-mainContent .abt-top p {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Roboto';
+  text-align: center;
+  color: #253F3E;
+  justify-content: center;
+  align-content: center;
+}
+.abtContainer .abt-mainContent .abt-bottom h3 {
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #253F3E;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.abtContainer .abt-mainContent .abt-bottom p {
+  margin-top: 20px;
+  margin-left: 50px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto';
+  text-align: center;
+  color: #253F3E;
+  justify-content: center;
+  align-content: center;
 }
 .contactContainer {
   width: 100%;

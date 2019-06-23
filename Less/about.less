@@ -7,7 +7,7 @@
 
     .abtHero {
         display: flex;
-        flex-direction: row;
+        flex-flow: row wrap;
         justify-content: space-around;
         width: 100%;
         padding-bottom: 20px;
@@ -15,7 +15,8 @@
   
             .hero-text {
                 display: flex;
-                flex-direction: column;
+                flex-flow: column wrap;
+                width: 50%;
             
                 h1 {
                     font-size: 3rem;
@@ -40,13 +41,11 @@
                 p {
                     margin-top: 20px;
                     margin-left: 50px;
-                    width: 80%;
                     font-size: 1.5rem;
                     line-height: 1.8rem;
                     font-family: @font;
                     text-align: center;
-                    color: @gray;
-                    width: 90%;
+                    color: @dark;
                     .center();
                 }
 
@@ -62,7 +61,59 @@
     
         }
     }
+    .abt-mainContent{
+        display: flex;
+        flex-flow: row wrap;
 
+        .abt-top{
+            h3 {
+                margin-top: 30px;
+                font-size: 2rem;
+                line-height: 1.5rem;
+                color: @dark;
+                font-family: @font;
+                text-align: center;
+            }
+
+            p {
+                margin-top: 20px;
+                margin-left: 50px;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-family: @font;
+                text-align: center;
+                color: @dark;
+                .center();
+            }
+
+
+        }
+        .abt-bottom{
+
+            h3 {
+                margin-top: 30px;
+                font-size: 2rem;
+                line-height: 1.5rem;
+                color: @dark;
+                font-family: @font;
+                text-align: center;
+            }
+
+            p {
+                margin-top: 20px;
+                margin-left: 50px;
+                font-size: 1.5rem;
+                line-height: 1.8rem;
+                font-family: @font;
+                text-align: center;
+                color: @dark;
+                .center();
+            }
+
+        }
+        
+
+    }
 
 
 
