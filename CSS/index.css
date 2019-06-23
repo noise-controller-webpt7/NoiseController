@@ -340,7 +340,6 @@ header {
 }
 .abtContainer .abtHero .abt-hero-img {
   margin: 30px 50px;
-  padding-top: 20px;
   justify-content: center;
   align-content: center;
   border-radius: 40px;
@@ -382,7 +381,7 @@ header {
 .abtContainer .abt-mainContent .abt-bottom {
   width: 50%;
   display: flex;
-  flex-direction: column;
+  flex-flow: column wrap;
   align-items: center;
   padding: 10%;
   background: #800080;
@@ -407,6 +406,55 @@ header {
   font-family: 'Roboto';
   color: #DECEB6;
   text-align: center;
+}
+.abtContainer .abt-blog-ref {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  width: 100%;
+  align-items: center;
+  margin-top: 50px;
+}
+.abtContainer .abt-blog-ref .abt-img {
+  margin: 30px;
+  justify-content: center;
+  align-content: center;
+  border-radius: 30px;
+}
+.abtContainer .abt-blog-ref .abt-blog {
+  display: flex;
+  flex-flow: column wrap;
+  width: 45%;
+  align-items: center;
+}
+.abtContainer .abt-blog-ref .abt-blog h3 {
+  margin-top: 30px;
+  font-size: 2.5rem;
+  line-height: 1.5rem;
+  color: #253F3E;
+  font-family: 'Roboto';
+  text-align: center;
+}
+.abtContainer .abt-blog-ref .abt-blog p {
+  margin: 20px 10px;
+  padding: 20px 10px;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto';
+  color: #253F3E;
+  text-align: center;
+}
+.abtContainer .abt-blog-ref .abt-blog button,
+.abtContainer .abt-blog-ref .abt-blog .blogbtn {
+  padding: 10px 5px;
+  width: 150px;
+  align-content: center;
+  border: 2px solid #800080;
+  border-radius: 10px;
+  background: #800080;
+  color: #DECEB6;
+  cursor: pointer;
+  outline: none;
 }
 .contactContainer {
   width: 100%;
@@ -491,9 +539,11 @@ header {
   float: right;
   padding-left: 30px;
   width: 20%;
+  align-items: center;
 }
 .contactContainer .contact-side .box1 {
   width: auto;
+  align-items: center;
 }
 .contactContainer .contact-side .box1 h2 {
   font-family: 'Roboto';
@@ -522,6 +572,7 @@ header {
 }
 .contactContainer .contact-side .box2 {
   width: auto;
+  align-items: center;
 }
 .contactContainer .contact-side .box2 h2 {
   font-family: 'Roboto';
