@@ -334,6 +334,76 @@ header {
   align-content: center;
   border-radius: 40px;
 }
+.contactContainer {
+  width: 80%;
+  margin: 0 auto;
+  justify-content: center;
+  align-content: center;
+}
+.contactContainer .contact {
+  width: 80%;
+  height: auto;
+  margin: 0 auto;
+  padding: 40px 10px;
+  background: #61C2A1;
+  border-radius: 25px;
+}
+.contactContainer .contact h1 {
+  font-family: 'Roboto';
+  font-size: 3.5rem;
+  margin-top: 50px;
+  text-align: center;
+}
+.contactContainer .contact h2 {
+  font-family: 'Roboto';
+  font-size: 2.5rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.contactContainer .contact p {
+  font-family: 'Roboto';
+  font-size: 1.5rem;
+  color: white;
+  text-align: center;
+}
+.contactContainer .contact form {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  margin: 0 auto;
+}
+.contactContainer .contact form input {
+  padding: 10px 10px;
+  margin: 20px 0;
+  border-radius: 10px;
+  background: #DECEB6;
+  color: #800080;
+  font-size: 1.3rem;
+}
+.contactContainer .contact form input:focus {
+  background: #253F3E;
+  color: #DECEB6;
+  border: 2px solid #DECEB6;
+}
+.contactContainer .contact form input[type="text"],
+.contactContainer .contact form input[type="password"],
+.contactContainer .contact form input[type="email"],
+.contactContainer .contact form input[type="tel"],
+.contactContainer .contact form input[id="msg"],
+.contactContainer .contact form select {
+  outline: none;
+}
+.contactContainer .contact form button,
+.contactContainer .contact form .form-btn {
+  padding: 10px 15px;
+  width: 200px;
+  border: 2px solid #800080;
+  border-radius: 10px;
+  background: #DECEB6;
+  color: #800080;
+  cursor: pointer;
+  outline: none;
+}
 .blogContainer {
   display: flex;
   flex-direction: column;

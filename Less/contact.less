@@ -1,1 +1,83 @@
- 
+ .contactContainer {
+    width: 80%;
+    margin: 0 auto;
+    .center();
+   
+
+    .contact {
+        width: 80%;
+        height: auto;
+        margin: 0 auto;
+        padding: 40px 10px;
+        background: @teal;
+        border-radius: 25px;
+
+            h1{
+                font-family: @font;
+                font-size: 3.5rem;
+                margin-top: 50px;
+                text-align: center;
+            }
+
+            h2{
+                font-family: @font;
+                font-size: 2.5rem;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            p{
+                font-family: @font;
+                font-size: 1.5rem;
+                color: @white;
+                text-align: center;
+            }
+            
+            form {
+                display: flex;
+                flex-direction: column;
+                width: 60%;
+                margin: 0 auto;
+
+                input {
+                        padding: 10px 10px; 
+                        margin: 20px 0;
+                        border-radius: 10px;
+                        background: @beige;
+                        color: @purple;
+                        font-size: 1.3rem;
+                    }
+                input:focus{
+                    background:@dark;
+                    color: @beige;
+                    border: 2px solid @beige;
+                }
+
+                input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[id="msg"], select { 
+                         outline: none;
+                }
+
+                    button, .form-btn {
+                            padding: 10px 15px;
+                            width: 200px;
+                            border: 2px solid @purple;
+                            border-radius: 10px;
+                            background: @beige;
+                            color: @purple;
+                            cursor: pointer;
+                            outline: none;
+                        }
+// hover not working yet!!!
+                        button:hover {
+                            background:@dark;
+                            color: @beige;
+                        }
+       
+        
+    }
+
+
+
+
+
+ }
