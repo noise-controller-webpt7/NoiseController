@@ -1,21 +1,22 @@
  .contactContainer {
-    width: 80%;
+    width: 100%;
     margin: 0 auto;
     .center();
-   
+    display:flex;
+    justify-content: space-around;
+    padding-right: 20px;
 
     .contact {
-        width: 80%;
-        height: auto;
+       width: 50%;
         margin: 0 auto;
-        padding: 40px 10px;
+        padding: 10px 10px;
         background: @teal;
         border-radius: 25px;
 
             h1{
                 font-family: @font;
                 font-size: 3.5rem;
-                margin-top: 50px;
+                margin-top: 30px;
                 text-align: center;
             }
 
@@ -36,7 +37,6 @@
             form {
                 display: flex;
                 flex-direction: column;
-                width: 60%;
                 margin: 0 auto;
 
                 input {
@@ -74,10 +74,31 @@
                         }
        
         
+         }
+
+
     }
 
+    .contact-side {
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+        float: right;
+        padding-left: 30px;
+        width: 20%;
 
+        .box1 {
+            width: auto;
+            
+        }
 
+        .box2 {
+            width: auto;            
+        }
 
+        .box3 {
+            width: auto;            
+        }
+    }
 
  }
