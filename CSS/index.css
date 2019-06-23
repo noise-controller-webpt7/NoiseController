@@ -239,18 +239,98 @@ img {
 footer .foot {
   display: flex;
   flex-flow: row wrap;
-  margin: 70px;
   justify-content: space-between;
+  padding: 5% 0 0 0;
+  background: #253F3E;
+  width: 100%;
 }
 footer .foot .foot-left {
   display: flex;
   flex-flow: column wrap;
-  width: 45%;
+  width: 50%;
+  padding-left: 10%;
+  align-items: flex-start;
+}
+footer .foot .foot-left h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #DECEB6;
+  font-family: 'Roboto';
+  text-align: left;
+}
+footer .foot .foot-left p {
+  margin-top: 5%;
+  padding-bottom: 8%;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto';
+  color: #DECEB6;
+}
+footer .foot .foot-left button {
+  padding: 10px 5px;
+  width: 150px;
+  border: 2px solid #800080;
+  border-radius: 10px;
+  background: #DECEB6;
+  color: #800080;
+  cursor: pointer;
+  outline: none;
+}
+footer .foot .foot-left button:hover {
+  background: #800080;
+  border: 2px solid #DECEB6;
+  color: #DECEB6;
 }
 footer .foot .foot-right {
   display: flex;
   flex-flow: column wrap;
-  width: 45%;
+  width: 50%;
+}
+footer .foot .foot-right h3 {
+  margin-top: 30px;
+  margin-left: 20%;
+  font-size: 2rem;
+  line-height: 1.5rem;
+  color: #DECEB6;
+  font-family: 'Roboto';
+  text-align: left;
+}
+footer .foot .foot-right address {
+  margin-top: 20px;
+  padding-bottom: 20px;
+  margin-left: 20%;
+  text-align: left;
+  font-size: 1.5rem;
+  line-height: 1.8rem;
+  font-family: 'Roboto';
+  color: #DECEB6;
+}
+footer .foot .foot-right .social-icons {
+  margin-left: 15%;
+}
+footer .foot .foot-right .social-icons i {
+  margin-left: 5%;
+  font-size: 2.5rem;
+  color: #DECEB6;
+  cursor: pointer;
+}
+footer .foot .foot-right .social-icons i:hover {
+  color: #800080;
+}
+footer .foot .foot-bottom {
+  width: 100%;
+  display: flex;
+  padding-bottom: -10%;
+  align-content: center;
+}
+footer .foot .foot-bottom p {
+  font-size: 2rem;
+  margin-top: 10%;
+  margin-left: -10%;
+  text-align: center;
+  color: #DECEB6;
 }
 h1 {
   font-size: 3rem;
