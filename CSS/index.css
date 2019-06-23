@@ -344,9 +344,9 @@ header {
   padding-right: 20px;
 }
 .contactContainer .contact {
-  width: 50%;
-  margin: 0 auto;
-  padding: 10px 10px;
+  width: 70%;
+  margin: 0 20px;
+  padding: 40px;
   background: #61C2A1;
   border-radius: 25px;
 }
@@ -398,6 +398,7 @@ header {
 .contactContainer .contact form .form-btn {
   padding: 10px 15px;
   width: 200px;
+  margin: 0 auto;
   border: 2px solid #800080;
   border-radius: 10px;
   background: #DECEB6;
@@ -420,11 +421,32 @@ header {
 .contactContainer .contact-side .box1 {
   width: auto;
 }
+.contactContainer .contact-side .box1 h2 {
+  font-family: 'Roboto';
+  font-size: 1.8rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.contactContainer .contact-side .box1 p {
+  font-family: 'Roboto';
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
+}
 .contactContainer .contact-side .box2 {
   width: auto;
 }
-.contactContainer .contact-side .box3 {
-  width: auto;
+.contactContainer .contact-side .box2 h2 {
+  font-family: 'Roboto';
+  font-size: 1.8rem;
+  margin-top: 10px;
+  text-align: center;
+}
+.contactContainer .contact-side .box2 p {
+  font-family: 'Roboto';
+  font-size: 1.3rem;
+  color: white;
+  text-align: center;
 }
 .blogContainer {
   display: flex;
