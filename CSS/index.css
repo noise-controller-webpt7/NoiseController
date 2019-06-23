@@ -433,6 +433,19 @@ header {
   color: white;
   text-align: center;
 }
+.contactContainer .contact-side .box1 button,
+.contactContainer .contact-side .box1 .side-btn {
+  padding: 5px 5px;
+  width: 75px;
+  margin-left: 70px;
+  align-content: center;
+  border: 2px solid #800080;
+  border-radius: 10px;
+  background: #800080;
+  color: #DECEB6;
+  cursor: pointer;
+  outline: none;
+}
 .contactContainer .contact-side .box2 {
   width: auto;
 }
@@ -447,6 +460,19 @@ header {
   font-size: 1.3rem;
   color: white;
   text-align: center;
+}
+.contactContainer .contact-side .box2 button,
+.contactContainer .contact-side .box2 .side-btn {
+  padding: 5px 5px;
+  width: 75px;
+  margin-left: 75px;
+  align-content: center;
+  border: 2px solid #800080;
+  border-radius: 10px;
+  background: #800080;
+  color: #DECEB6;
+  cursor: pointer;
+  outline: none;
 }
 .blogContainer {
   display: flex;
