@@ -544,7 +544,7 @@ header {
   flex-wrap: wrap;
 }
 .blogContainer section .blog {
-  display: flex;
+  display: felx;
   background-color: #F6F5F0;
   margin: 2% 2%;
   width: 25%;
