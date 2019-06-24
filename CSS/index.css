@@ -570,12 +570,47 @@ header {
 }
 .contactContainer .contact form {
   display: flex;
-  flex-direction: column;
+  flex-flow: row wrap;
   margin: 0 auto;
+  text-align: left;
 }
-.contactContainer .contact form input {
-  padding: 10px 10px;
-  margin: 20px 0;
+.contactContainer .contact form input[type="text"],
+.contactContainer .contact form input[id="first"] {
+  padding: 10px 100px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  background: bisque;
+  color: #800080;
+  font-size: 1.3rem;
+}
+.contactContainer .contact form input[type="text"],
+.contactContainer .contact form input[id="last"] {
+  padding: 10px 100px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  background: bisque;
+  color: #800080;
+  font-size: 1.3rem;
+}
+.contactContainer .contact form input[type="email"] {
+  padding: 10px 100px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  background: bisque;
+  color: #800080;
+  font-size: 1.3rem;
+}
+.contactContainer .contact form input[type="tel"] {
+  padding: 10px 100px;
+  margin: 20px 10px;
+  border-radius: 10px;
+  background: bisque;
+  color: #800080;
+  font-size: 1.3rem;
+}
+.contactContainer .contact form input[type="textarea"] {
+  padding: 100px 290px;
+  margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
   color: #800080;
@@ -587,12 +622,15 @@ header {
   border: 2px solid #253f3e;
 }
 .contactContainer .contact form input[type="text"],
-.contactContainer .contact form input[type="password"],
 .contactContainer .contact form input[type="email"],
 .contactContainer .contact form input[type="tel"],
-.contactContainer .contact form input[id="msg"],
+.contactContainer .contact form input[type="textarea"],
 .contactContainer .contact form select {
   outline: none;
+}
+.contactContainer .contact form input::placeholder {
+  text-align: center;
+  vertical-align: text-top;
 }
 .contactContainer .contact form button,
 .contactContainer .contact form .form-btn {

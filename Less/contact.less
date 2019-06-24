@@ -36,25 +36,68 @@
             
             form {
                 display: flex;
-                flex-direction: column;
+                flex-flow: row wrap;
                 margin: 0 auto;
+                text-align: left;
 
-                input {
-                        padding: 10px 10px; 
-                        margin: 20px 0;
+                input[type="text"], input[id="first"] {
+                        padding: 10px 100px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                        
+                    }
+
+                input[type="text"], input[id="last"] {
+                        padding: 10px 100px; 
+                        margin: 20px 10px;
                         border-radius: 10px;
                         background: bisque;
                         color: @purple;
                         font-size: 1.3rem;
                     }
+                input[type="email"] {
+                        padding: 10px 100px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                    }
+
+                input[type="tel"] {
+                        padding: 10px 100px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                    }
+
+                 input[type="textarea"] {
+                        padding: 100px 290px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                    }
+
                 input:focus{
                     background: @beige;
                     color: @purple;
                     border: 2px solid @dark;
                 }
 
-                input[type="text"], input[type="password"], input[type="email"], input[type="tel"], input[id="msg"], select { 
+                input[type="text"], input[type="email"], input[type="tel"], input[type="textarea"], select { 
                          outline: none;
+                }
+
+                input::placeholder {
+                    text-align: center;
+                    vertical-align: text-top;
                 }
 
                     button, .form-btn {
