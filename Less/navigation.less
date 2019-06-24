@@ -9,13 +9,11 @@
     width: 100%;
     margin: 10px 0;
 
-    h1 {
-        font-size: 2rem;
-        margin-top: 20px;
-        margin-left: 30px;
-        font-family: @font;
-        color: @teal;
-        .center();
+   
+    img {
+        width: 250px;
+        height: auto;
+        margin-left: 5%;
     }
    
     nav {
@@ -43,7 +41,7 @@
         }
 
         a:last-child {
-            border: 1px solid @teal;
+            border: 1px solid @purple;
             padding: 1.3rem;
             margin-top: 10px;
             border-radius: 10px;
@@ -51,6 +49,12 @@
             align-items: center;
             .center();
 
+        }
+
+        a:last-child:hover{
+            background: @beige;
+            color: @purple;
+            border: 1px solid @beige;
         }
 
     }

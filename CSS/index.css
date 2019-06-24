@@ -197,14 +197,10 @@ img {
   width: 100%;
   margin: 10px 0;
 }
-.nav-header h1 {
-  font-size: 2rem;
-  margin-top: 20px;
-  margin-left: 30px;
-  font-family: 'Roboto';
-  color: #61C2A1;
-  justify-content: center;
-  align-content: center;
+.nav-header img {
+  width: 250px;
+  height: auto;
+  margin-left: 5%;
 }
 .nav-header nav {
   display: flex;
@@ -227,7 +223,7 @@ img {
   align-content: center;
 }
 .nav-header nav a:last-child {
-  border: 1px solid #61C2A1;
+  border: 1px solid #800080;
   padding: 1.3rem;
   margin-top: 10px;
   border-radius: 10px;
@@ -236,12 +232,17 @@ img {
   justify-content: center;
   align-content: center;
 }
+.nav-header nav a:last-child:hover {
+  background: #DECEB6;
+  color: #800080;
+  border: 1px solid #DECEB6;
+}
 footer .foot {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
   padding: 5% 0 0 0;
-  background: #253F3E;
+  background: #253f3e;
   width: 100%;
 }
 footer .foot .foot-left {
@@ -251,13 +252,9 @@ footer .foot .foot-left {
   padding-left: 10%;
   align-items: flex-start;
 }
-footer .foot .foot-left h2 {
-  margin-top: 30px;
-  font-size: 2rem;
-  line-height: 1.5rem;
-  color: #DECEB6;
-  font-family: 'Roboto';
-  text-align: left;
+footer .foot .foot-left img {
+  width: 250px;
+  height: auto;
 }
 footer .foot .foot-left p {
   margin-top: 5%;
@@ -271,6 +268,7 @@ footer .foot .foot-left p {
 footer .foot .foot-left button {
   padding: 10px 5px;
   width: 150px;
+  font-size: 1.5rem;
   border: 2px solid #DECEB6;
   border-radius: 10px;
   background: #DECEB6;
@@ -326,7 +324,7 @@ footer .foot .foot-bottom {
   align-content: center;
 }
 footer .foot .foot-bottom p {
-  font-size: 2rem;
+  font-size: 1rem;
   margin-top: 10%;
   margin-left: -10%;
   text-align: center;
@@ -394,7 +392,7 @@ header {
 .abtContainer .abtHero .hero-text h1 {
   font-size: 3rem;
   line-height: 1rem;
-  color: #253F3E;
+  color: #253f3e;
   font-family: 'Roboto';
   margin-top: 50px;
   text-align: center;
@@ -404,7 +402,7 @@ header {
   margin-top: 30px;
   font-size: 2rem;
   line-height: 1.5rem;
-  color: #253F3E;
+  color: #253f3e;
   font-family: 'Roboto';
   text-align: center;
 }
@@ -414,7 +412,7 @@ header {
   font-size: 1.5rem;
   line-height: 1.8rem;
   font-family: 'Roboto';
-  color: #253F3E;
+  color: #253f3e;
   justify-content: center;
   align-content: center;
 }
@@ -435,7 +433,7 @@ header {
   flex-flow: column wrap;
   align-items: center;
   padding: 10%;
-  background: #253F3E;
+  background: #253f3e;
 }
 .abtContainer .abt-mainContent .abt-top i {
   margin: 30px 0;
@@ -511,7 +509,7 @@ header {
   margin-top: 30px;
   font-size: 2.5rem;
   line-height: 1.5rem;
-  color: #253F3E;
+  color: #253f3e;
   font-family: 'Roboto';
   text-align: center;
 }
@@ -521,7 +519,7 @@ header {
   font-size: 1.5rem;
   line-height: 1.8rem;
   font-family: 'Roboto';
-  color: #253F3E;
+  color: #253f3e;
   text-align: center;
 }
 .abtContainer .abt-blog-ref .abt-blog button,
@@ -552,7 +550,7 @@ header {
 }
 .contactContainer .contact h1 {
   font-family: 'Roboto';
-  color: #253F3E;
+  color: #253f3e;
   font-size: 3.5rem;
   margin-top: 30px;
   text-align: center;
@@ -586,7 +584,7 @@ header {
 .contactContainer .contact form input:focus {
   background: #DECEB6;
   color: #800080;
-  border: 2px solid #253F3E;
+  border: 2px solid #253f3e;
 }
 .contactContainer .contact form input[type="text"],
 .contactContainer .contact form input[type="password"],
@@ -600,6 +598,7 @@ header {
 .contactContainer .contact form .form-btn {
   padding: 10px 15px;
   width: 200px;
+  font-size: 1.4rem;
   margin: 0 auto;
   border-radius: 10px;
   background: bisque;
@@ -608,7 +607,7 @@ header {
   outline: none;
 }
 .contactContainer .contact form button:hover {
-  background: #253F3E;
+  background: #253f3e;
   color: bisque;
 }
 .contactContainer .contact-side {
@@ -625,7 +624,7 @@ header {
   display: flex;
   flex-flow: column wrap;
   align-items: center;
-  background: #253F3E;
+  background: #253f3e;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
   transition: 0.3s;
   margin-right: 10%;
@@ -647,10 +646,11 @@ header {
 .contactContainer .contact-side .box1 button,
 .contactContainer .contact-side .box1 .side-btn {
   padding: 5px 5px;
-  width: 75px;
+  width: 100px;
+  font-size: 1.3rem;
   border-radius: 10px;
   background: #DECEB6;
-  color: #253F3E;
+  color: #253f3e;
   cursor: pointer;
   outline: none;
 }
@@ -687,17 +687,18 @@ header {
 .contactContainer .contact-side .box2 button,
 .contactContainer .contact-side .box2 .side-btn {
   padding: 5px 5px;
-  width: 75px;
+  width: 100px;
+  font-size: 1.3rem;
   border-radius: 10px;
   background: #DECEB6;
-  color: #253F3E;
+  color: #253f3e;
   cursor: pointer;
   outline: none;
 }
 .contactContainer .contact-side .box2 .side-btn:hover {
-  background: #253F3E;
+  background: #253f3e;
   color: #DECEB6;
-  border: 1px solid #253F3E;
+  border: 1px solid #253f3e;
 }
 .blogContainer {
   display: flex;
