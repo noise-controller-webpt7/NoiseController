@@ -9,7 +9,7 @@ class TabLink {
         } else {
             this.blogs = document.querySelectorAll(`.blog[data-tab="${this.tabData}"]`) // selects the blogs with the same data-tab
         }
-  
+
         this.blogs = Array.from(this.blogs).map(item => new TabBlog(item))
         this.tabElement.addEventListener("click", () => this.selectTab());
     }
