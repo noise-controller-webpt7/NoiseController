@@ -1,0 +1,199 @@
+.abtContainer{
+    margin: 0 auto;
+    width: 100%;
+    background: @beige;
+    padding: 10% 0;
+   
+
+    .abtHero {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        padding-bottom: 20px;
+        
+  
+            .hero-text {
+                display: flex;
+                flex-flow: column wrap;
+                width: 50%;
+            
+                h1 {
+                    font-size: 3rem;
+                    line-height: 1rem;
+                    color: @dark;
+                    font-family: @font;
+                    margin-top: 50px;
+                    text-align: center;
+                    margin-left: 40px;
+                }
+
+                h2 {
+                    margin-top: 30px;
+                    font-size: 2rem;
+                    line-height: 1.5rem;
+                    color: @dark;
+                    font-family: @font;
+                    text-align: center;
+                }
+
+                p {
+                    margin-top: 20px;
+                    margin-left: 50px;
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    font-family: @font;
+                    color: @dark;
+                    .center();
+                }
+
+        }
+
+        .abt-hero-img{
+            // add border box shadow on image.... floating purple 
+            margin: 30px 50px;
+            .center();
+            border-radius: 40px;
+
+        }
+    }
+    .abt-mainContent{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 20px 0;
+
+        .abt-top{
+            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 10%;
+            background: @dark;
+
+
+            
+            i {
+                margin: 30px 0;
+                font-size: 5rem;
+                line-height: 1.5rem;
+                color: @beige;
+                
+            }
+
+            h3 {
+                margin-top: 30px;
+                font-size: 2rem;
+                line-height: 1.5rem;
+                color: @beige;
+                font-family: @font;
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-family: @font;
+                color: @beige;
+                text-align: center;
+            }
+
+
+        }
+        .abt-bottom{
+            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 10%;
+            background: @purple;
+
+
+            
+            i {
+                margin: 30px 0;
+                font-size: 5rem;
+                line-height: 1.5rem;
+                color: @beige;
+                
+            }
+
+            h3 {
+                margin-top: 30px;
+                font-size: 2rem;
+                line-height: 1.5rem;
+                color: @beige;
+                font-family: @font;
+            }
+
+            p {
+                margin-top: 20px;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-family: @font;
+                color: @beige;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .abt-blog-ref {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        margin-top: 50px;
+
+
+            .abt-img{
+                margin: 30px;
+                .center();
+                border-radius: 30px;
+            }
+        
+  
+            .abt-blog {
+                display: flex;
+                flex-flow: column wrap;
+                width: 45%;
+                align-items: center;
+
+
+                h3 {
+                    margin-top: 30px;
+                    font-size: 2.5rem;
+                    line-height: 1.5rem;
+                    color: @dark;
+                    font-family: @font;
+                    text-align: center;
+                }
+
+                p {
+                    margin: 20px 10px;
+                    padding: 20px 10px;
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    font-family: @font;
+                    color: @dark;
+                    text-align: center;
+                }
+
+                button, .blogbtn {
+                    padding: 10px 5px;
+                    width: 150px;
+                    align-content: center;
+                    border: 2px solid @purple;
+                    border-radius: 10px;
+                    background: @purple;
+                    color: @beige;
+                    cursor: pointer;
+                    outline: none;
+    
+                }
+               
+        }
+
+    }
+
+}

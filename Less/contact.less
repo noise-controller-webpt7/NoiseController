@@ -1,0 +1,228 @@
+ .contactContainer {
+    width: 100%;
+    margin: 0 auto;
+    .center();
+    display:flex;
+    justify-content: space-around;
+    padding-right: 20px;
+
+    .contact {
+        width: 70%;
+        padding: 40px;
+        background: @beige;
+
+            h1{
+                font-family: @font;
+                color: @dark;
+                font-size: 3.5rem;
+                margin-top: 30px;
+                text-align: center;
+            }
+
+            h2{
+                font-family: @font;
+                color: @purple;
+                font-size: 2.5rem;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            p{
+                font-family: @font;
+                font-size: 1.5rem;
+                color: @purple;
+                text-align: center;
+            }
+            
+            form {
+                display: flex;
+                flex-flow: row wrap;
+                margin: 0 auto;
+                text-align: left;
+
+                input[type="text"], input[id="first"] {
+                        padding: 10px 100px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                        
+                    }
+
+                input[type="text"], input[id="last"] {
+                        padding: 10px 100px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                    }
+                input[type="email"] {
+                        padding: 10px 100px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                    }
+
+                input[type="tel"] {
+                        padding: 10px 100px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                    }
+
+                 input[type="textarea"] {
+                        padding: 100px 290px; 
+                        margin: 20px 10px;
+                        border-radius: 10px;
+                        background: bisque;
+                        color: @purple;
+                        font-size: 1.3rem;
+                    }
+
+                input:focus{
+                    background: @beige;
+                    color: @purple;
+                    border: 2px solid @dark;
+                }
+
+                input[type="text"], input[type="email"], input[type="tel"], input[type="textarea"], select { 
+                         outline: none;
+                }
+
+                input::placeholder {
+                    text-align: center;
+                    vertical-align: text-top;
+                }
+
+                    button, .form-btn {
+                            padding: 10px 15px;
+                            width: 200px;
+                            font-size: 1.4rem;
+                            margin: 0 auto;
+                            border-radius: 10px;
+                            background: bisque;
+                            color: @purple;
+                            cursor: pointer;
+                            outline: none;
+                        }
+// hover not working yet!!!
+                        button:hover {
+                            background:@dark;
+                            color: bisque;
+                        }
+       
+        
+         }
+
+
+    }
+
+    .contact-side {
+        display:flex;
+        flex-direction: column;
+        margin: 0 auto;
+        float: right;
+        padding-left: 30px;
+        width: 30%;
+        align-items: center;
+
+        .box1 {
+            width: 100%;
+            display:flex;
+            flex-flow: column wrap;
+            align-items: center;
+            background: @dark;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+            margin-right: 10%;
+            padding: 10% 5%;
+
+            h2{
+                font-family: @font;
+                color: @beige;
+                font-size: 1.8rem;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            p{
+                font-family: @font;
+                font-size: 1.3rem;
+                color: @beige;
+                text-align: center;
+            }
+            button, .side-btn {
+                padding: 5px 5px;
+                width: 100px;
+                font-size: 1.3rem;
+                border-radius: 10px;
+                background: @beige;
+                color: @dark;
+                cursor: pointer;
+                outline: none;
+
+            }
+
+            .side-btn:hover{
+                background: @purple;
+                color: @beige;
+                border: 1px solid @purple;
+
+            }
+            
+        }
+
+        .box2 {
+            width: 100%;
+            display:flex;
+            flex-flow: column wrap;
+            align-items: center;
+            background: @purple;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5);
+            transition: 0.3s;
+            margin-right: 10%;
+            padding: 7% 5%;
+            margin-top: 5%;
+
+            h2{
+                font-family: @font;
+                color: @beige;
+                font-size: 1.8rem;
+                margin-top: 10px;
+                text-align: center;
+            }
+
+            p{
+                font-family: @font;
+                font-size: 1.3rem;
+                color: @beige;
+                text-align: center;
+            }
+            button, .side-btn {
+                padding: 5px 5px;
+                width: 100px;
+                font-size: 1.3rem;
+                border-radius: 10px;
+                background: @beige;
+                color: @dark;
+                cursor: pointer;
+                outline: none;
+
+            }
+
+            .side-btn:hover{
+                background: @dark;
+                color: @beige;
+                border: 1px solid @dark;
+            }
+        }
+
+    }
+
+ }
