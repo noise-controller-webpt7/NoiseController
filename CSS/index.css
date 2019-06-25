@@ -382,7 +382,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 3%;
 }
 .abtContainer .abtHero .hero-text {
   display: flex;
@@ -396,10 +396,9 @@ header {
   font-family: 'Roboto';
   margin-top: 50px;
   text-align: center;
-  margin-left: 40px;
 }
 .abtContainer .abtHero .hero-text h2 {
-  margin-top: 30px;
+  margin-top: 7%;
   font-size: 2rem;
   line-height: 1.5rem;
   color: #253f3e;
@@ -407,8 +406,8 @@ header {
   text-align: center;
 }
 .abtContainer .abtHero .hero-text p {
-  margin-top: 20px;
-  margin-left: 50px;
+  margin-top: 3%;
+  margin-left: 10%;
   font-size: 1.5rem;
   line-height: 1.8rem;
   font-family: 'Roboto';
@@ -420,12 +419,14 @@ header {
   margin: 30px 50px;
   justify-content: center;
   align-content: center;
-  border-radius: 40px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(128, 0, 128, 0.5);
+  transition: 0.3s;
 }
 .abtContainer .abt-mainContent {
   display: flex;
   flex-flow: row wrap;
-  margin: 20px 0;
+  margin: 10% 0;
 }
 .abtContainer .abt-mainContent .abt-top {
   width: 50%;
@@ -436,20 +437,20 @@ header {
   background: #253f3e;
 }
 .abtContainer .abt-mainContent .abt-top i {
-  margin: 30px 0;
+  margin: 10% 0;
   font-size: 5rem;
   line-height: 1.5rem;
   color: #DECEB6;
 }
 .abtContainer .abt-mainContent .abt-top h3 {
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 2rem;
   line-height: 1.5rem;
   color: #DECEB6;
   font-family: 'Roboto';
 }
 .abtContainer .abt-mainContent .abt-top p {
-  margin-top: 20px;
+  margin-top: 8%;
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: 'Roboto';
@@ -465,20 +466,20 @@ header {
   background: #800080;
 }
 .abtContainer .abt-mainContent .abt-bottom i {
-  margin: 30px 0;
+  margin: 10% 0;
   font-size: 5rem;
   line-height: 1.5rem;
   color: #DECEB6;
 }
 .abtContainer .abt-mainContent .abt-bottom h3 {
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 2rem;
   line-height: 1.5rem;
   color: #DECEB6;
   font-family: 'Roboto';
 }
 .abtContainer .abt-mainContent .abt-bottom p {
-  margin-top: 20px;
+  margin-top: 8%;
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: 'Roboto';
@@ -491,13 +492,15 @@ header {
   justify-content: space-around;
   width: 100%;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10%;
 }
 .abtContainer .abt-blog-ref .abt-img {
-  margin: 30px;
+  margin: 5%;
   justify-content: center;
   align-content: center;
   border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(128, 0, 128, 0.5);
+  transition: 0.3s;
 }
 .abtContainer .abt-blog-ref .abt-blog {
   display: flex;
@@ -506,7 +509,7 @@ header {
   align-items: center;
 }
 .abtContainer .abt-blog-ref .abt-blog h3 {
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 2.5rem;
   line-height: 1.5rem;
   color: #253f3e;
@@ -514,8 +517,8 @@ header {
   text-align: center;
 }
 .abtContainer .abt-blog-ref .abt-blog p {
-  margin: 20px 10px;
-  padding: 20px 10px;
+  margin: 5%;
+  padding: 3% 5%;
   font-size: 1.5rem;
   line-height: 1.8rem;
   font-family: 'Roboto';
@@ -533,6 +536,88 @@ header {
   color: #DECEB6;
   cursor: pointer;
   outline: none;
+}
+@media (max-width: 800px) {
+  .abtContainer .abtHero {
+    margin: 0;
+    flex-flow: row-reverse wrap;
+  }
+  .abtContainer .abtHero .hero-text {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+  }
+  .abtContainer .abtHero .hero-text h1 {
+    font-size: 3.5rem;
+    margin-top: 3%;
+  }
+  .abtContainer .abtHero .hero-text h2 {
+    margin-top: 7%;
+  }
+  .abtContainer .abtHero .hero-text p {
+    margin-top: 3%;
+    margin-left: 0%;
+  }
+  .abtContainer .abtHero .abt-hero-img {
+    margin: 5%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 30px;
+  }
+  .abtContainer .abt-mainContent .abt-top {
+    width: 100%;
+    padding: 5%;
+  }
+  .abtContainer .abt-mainContent .abt-top i {
+    margin: 5% 0;
+    font-size: 6rem;
+  }
+  .abtContainer .abt-mainContent .abt-top h3 {
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+  .abtContainer .abt-mainContent .abt-top p {
+    margin: 5%;
+    padding: 0 3%;
+  }
+  .abtContainer .abt-mainContent .abt-bottom {
+    width: 100%;
+    padding: 5%;
+  }
+  .abtContainer .abt-mainContent .abt-bottom i {
+    margin: 5% 0;
+    font-size: 6rem;
+  }
+  .abtContainer .abt-mainContent .abt-bottom h3 {
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+  .abtContainer .abt-mainContent .abt-bottom p {
+    margin-top: 5%;
+    padding: 0 4%;
+  }
+  .abtContainer .abt-blog-ref {
+    margin-top: 5%;
+  }
+  .abtContainer .abt-blog-ref .abt-blog {
+    width: 100%;
+  }
+  .abtContainer .abt-blog-ref .abt-blog h3 {
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+  .abtContainer .abt-blog-ref .abt-blog p {
+    margin: 3%;
+    padding: 3%;
+  }
+  .abtContainer .abt-blog-ref .abt-blog button,
+  .abtContainer .abt-blog-ref .abt-blog .blogbtn {
+    padding: 15px 5px;
+    width: 300px;
+    font-size: 2rem;
+  }
 }
 .contactContainer {
   width: 100%;
