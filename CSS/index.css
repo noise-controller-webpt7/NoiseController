@@ -136,6 +136,8 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -190,7 +192,6 @@ img {
 .nav-header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   height: auto;
   justify-content: space-between;
   align-content: center;
@@ -198,7 +199,7 @@ img {
   margin: 10px 0;
 }
 .nav-header img {
-  width: 250px;
+  width: 20%;
   height: auto;
   margin-left: 5%;
 }
@@ -209,33 +210,121 @@ img {
   justify-content: space-between;
   justify-content: center;
   align-content: center;
+  padding-right: 3%;
+  padding-left: 10%;
 }
 .nav-header nav a {
   font: 'Roboto';
   color: #DECEB6;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   align-content: space-between;
   align-items: center;
   padding-top: 10px;
-  padding-right: 80px;
+  padding-right: 10%;
   justify-content: center;
   align-content: center;
 }
+.nav-header nav a:nth-last-child(-n+3) {
+  white-space: nowrap;
+}
 .nav-header nav a:last-child {
   border: 1px solid #800080;
-  padding: 1.3rem;
+  padding: 1rem 3rem;
   margin-top: 10px;
   border-radius: 10px;
-  margin-right: 80px;
+  margin-right: 10%;
   align-items: center;
   justify-content: center;
   align-content: center;
+  white-space: nowrap;
 }
 .nav-header nav a:last-child:hover {
   background: #DECEB6;
   color: #800080;
   border: 1px solid #DECEB6;
+}
+@media (max-width: 800px) {
+  .nav-header {
+    display: flex;
+    justify-content: space-around;
+  }
+  .nav-header img {
+    width: 25%;
+    height: auto;
+    margin-left: 2%;
+  }
+  .nav-header nav {
+    padding-right: 2%;
+    padding-left: 8%;
+  }
+  .nav-header nav a {
+    visibility: hidden;
+    font-size: 1.1rem;
+    padding-right: 8%;
+  }
+  .nav-header nav a:last-child {
+    padding: 1rem 1.8rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 8%;
+  }
+}
+.dropdown {
+  z-index: 2;
+  position: absolute;
+  right: 25px;
+  cursor: pointer;
+}
+.dropdown .dropdown-button {
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+.dropdown .dropdown-button .line1 {
+  color: #DECEB6;
+  font-size: 3rem;
+}
+.dropdown .dropdown-content {
+  width: 30%;
+  position: absolute;
+  background: #253f3e;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+}
+.dropdown .dropdown-link {
+  width: 100%;
+  text-align: center;
+  padding: 15px 0;
+  font-size: 1.5rem;
+  color: #DECEB6;
+  text-decoration: none;
+}
+.dropdown .dropdown-hidden {
+  display: none;
+}
+@media (max-width: 500px) {
+  .nav-header img {
+    width: 15%;
+    height: auto;
+    margin-left: 2%;
+  }
+  .nav-header nav {
+    padding-right: 2%;
+    padding-left: 8%;
+  }
+  .nav-header nav a {
+    font-size: 1.1rem;
+    padding-right: 8%;
+  }
+  .nav-header nav a:last-child {
+    padding: 1rem 1.8rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 8%;
+  }
 }
 footer .foot {
   display: flex;
@@ -382,7 +471,7 @@ header {
   flex-flow: row wrap;
   justify-content: space-around;
   width: 100%;
-  padding-bottom: 20px;
+  padding-bottom: 3%;
 }
 .abtContainer .abtHero .hero-text {
   display: flex;
@@ -396,10 +485,9 @@ header {
   font-family: 'Roboto';
   margin-top: 50px;
   text-align: center;
-  margin-left: 40px;
 }
 .abtContainer .abtHero .hero-text h2 {
-  margin-top: 30px;
+  margin-top: 7%;
   font-size: 2rem;
   line-height: 1.5rem;
   color: #253f3e;
@@ -407,8 +495,8 @@ header {
   text-align: center;
 }
 .abtContainer .abtHero .hero-text p {
-  margin-top: 20px;
-  margin-left: 50px;
+  margin-top: 3%;
+  margin-left: 10%;
   font-size: 1.5rem;
   line-height: 1.8rem;
   font-family: 'Roboto';
@@ -420,12 +508,14 @@ header {
   margin: 30px 50px;
   justify-content: center;
   align-content: center;
-  border-radius: 40px;
+  border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(128, 0, 128, 0.5);
+  transition: 0.3s;
 }
 .abtContainer .abt-mainContent {
   display: flex;
   flex-flow: row wrap;
-  margin: 20px 0;
+  margin: 10% 0;
 }
 .abtContainer .abt-mainContent .abt-top {
   width: 50%;
@@ -436,20 +526,20 @@ header {
   background: #253f3e;
 }
 .abtContainer .abt-mainContent .abt-top i {
-  margin: 30px 0;
+  margin: 10% 0;
   font-size: 5rem;
   line-height: 1.5rem;
   color: #DECEB6;
 }
 .abtContainer .abt-mainContent .abt-top h3 {
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 2rem;
   line-height: 1.5rem;
   color: #DECEB6;
   font-family: 'Roboto';
 }
 .abtContainer .abt-mainContent .abt-top p {
-  margin-top: 20px;
+  margin-top: 8%;
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: 'Roboto';
@@ -465,20 +555,20 @@ header {
   background: #800080;
 }
 .abtContainer .abt-mainContent .abt-bottom i {
-  margin: 30px 0;
+  margin: 10% 0;
   font-size: 5rem;
   line-height: 1.5rem;
   color: #DECEB6;
 }
 .abtContainer .abt-mainContent .abt-bottom h3 {
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 2rem;
   line-height: 1.5rem;
   color: #DECEB6;
   font-family: 'Roboto';
 }
 .abtContainer .abt-mainContent .abt-bottom p {
-  margin-top: 20px;
+  margin-top: 8%;
   font-size: 1.5rem;
   line-height: 2rem;
   font-family: 'Roboto';
@@ -491,13 +581,15 @@ header {
   justify-content: space-around;
   width: 100%;
   align-items: center;
-  margin-top: 50px;
+  margin-top: 10%;
 }
 .abtContainer .abt-blog-ref .abt-img {
-  margin: 30px;
+  margin: 5%;
   justify-content: center;
   align-content: center;
   border-radius: 30px;
+  box-shadow: 0 4px 8px 0 rgba(128, 0, 128, 0.5);
+  transition: 0.3s;
 }
 .abtContainer .abt-blog-ref .abt-blog {
   display: flex;
@@ -506,7 +598,7 @@ header {
   align-items: center;
 }
 .abtContainer .abt-blog-ref .abt-blog h3 {
-  margin-top: 30px;
+  margin-top: 10%;
   font-size: 2.5rem;
   line-height: 1.5rem;
   color: #253f3e;
@@ -514,8 +606,8 @@ header {
   text-align: center;
 }
 .abtContainer .abt-blog-ref .abt-blog p {
-  margin: 20px 10px;
-  padding: 20px 10px;
+  margin: 5%;
+  padding: 3% 5%;
   font-size: 1.5rem;
   line-height: 1.8rem;
   font-family: 'Roboto';
@@ -534,6 +626,88 @@ header {
   cursor: pointer;
   outline: none;
 }
+@media (max-width: 800px) {
+  .abtContainer .abtHero {
+    margin: 0;
+    flex-flow: row-reverse wrap;
+  }
+  .abtContainer .abtHero .hero-text {
+    display: flex;
+    flex-flow: column wrap;
+    width: 90%;
+    justify-content: center;
+    align-content: center;
+  }
+  .abtContainer .abtHero .hero-text h1 {
+    font-size: 3.5rem;
+    margin-top: 3%;
+  }
+  .abtContainer .abtHero .hero-text h2 {
+    margin-top: 7%;
+  }
+  .abtContainer .abtHero .hero-text p {
+    margin-top: 3%;
+    margin-left: 0%;
+  }
+  .abtContainer .abtHero .abt-hero-img {
+    margin: 5%;
+    justify-content: center;
+    align-content: center;
+    border-radius: 30px;
+  }
+  .abtContainer .abt-mainContent .abt-top {
+    width: 100%;
+    padding: 5%;
+  }
+  .abtContainer .abt-mainContent .abt-top i {
+    margin: 5% 0;
+    font-size: 6rem;
+  }
+  .abtContainer .abt-mainContent .abt-top h3 {
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+  .abtContainer .abt-mainContent .abt-top p {
+    margin: 5%;
+    padding: 0 3%;
+  }
+  .abtContainer .abt-mainContent .abt-bottom {
+    width: 100%;
+    padding: 5%;
+  }
+  .abtContainer .abt-mainContent .abt-bottom i {
+    margin: 5% 0;
+    font-size: 6rem;
+  }
+  .abtContainer .abt-mainContent .abt-bottom h3 {
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+  .abtContainer .abt-mainContent .abt-bottom p {
+    margin-top: 5%;
+    padding: 0 4%;
+  }
+  .abtContainer .abt-blog-ref {
+    margin-top: 5%;
+  }
+  .abtContainer .abt-blog-ref .abt-blog {
+    width: 100%;
+  }
+  .abtContainer .abt-blog-ref .abt-blog h3 {
+    margin-top: 5%;
+    font-size: 2.5rem;
+  }
+  .abtContainer .abt-blog-ref .abt-blog p {
+    margin: 3%;
+    padding: 3%;
+  }
+  .abtContainer .abt-blog-ref .abt-blog button,
+  .abtContainer .abt-blog-ref .abt-blog .blogbtn {
+    padding: 15px 5px;
+    width: 300px;
+    font-size: 2rem;
+  }
+}
 .contactContainer {
   width: 100%;
   margin: 0 auto;
@@ -541,11 +715,11 @@ header {
   align-content: center;
   display: flex;
   justify-content: space-around;
-  padding-right: 20px;
+  padding-right: 5%;
 }
 .contactContainer .contact {
   width: 70%;
-  padding: 40px;
+  padding: 4%;
   background: #DECEB6;
 }
 .contactContainer .contact h1 {
@@ -576,8 +750,8 @@ header {
 }
 .contactContainer .contact form input[type="text"],
 .contactContainer .contact form input[id="first"] {
-  padding: 10px 100px;
-  margin: 20px 10px;
+  padding: 1% 13%;
+  margin: 20px 7px;
   border-radius: 10px;
   background: bisque;
   color: #800080;
@@ -585,7 +759,7 @@ header {
 }
 .contactContainer .contact form input[type="text"],
 .contactContainer .contact form input[id="last"] {
-  padding: 10px 100px;
+  padding: 1% 13%;
   margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
@@ -593,7 +767,7 @@ header {
   font-size: 1.3rem;
 }
 .contactContainer .contact form input[type="email"] {
-  padding: 10px 100px;
+  padding: 1% 13%;
   margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
@@ -601,7 +775,7 @@ header {
   font-size: 1.3rem;
 }
 .contactContainer .contact form input[type="tel"] {
-  padding: 10px 100px;
+  padding: 1% 13%;
   margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
@@ -609,7 +783,7 @@ header {
   font-size: 1.3rem;
 }
 .contactContainer .contact form input[type="textarea"] {
-  padding: 100px 290px;
+  padding: 20% 38%;
   margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
@@ -807,11 +981,105 @@ header {
   background: url('/img/team.jpg') no-repeat;
 }
 .teamContainer .teamhero .hero h2 {
-  font-size: 3rem;
+  font-size: 4rem;
   line-height: 1rem;
   color: #DECEB6;
   font-family: 'Roboto';
+  padding-top: 260px;
   text-align: center;
   position: relative;
   z-index: 3;
+}
+.teamContainer .team-cards {
+  display: flex;
+  flex-flow: row wrap;
+  width: 100%;
+  background: #DECEB6;
+  margin-top: -10%;
+  justify-content: center;
+  align-content: center;
+}
+.teamContainer .team-cards .card1 {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+}
+.teamContainer .team-cards .card1 h2 {
+  margin: 50px 0;
+  font-size: 3rem;
+  line-height: 1.5rem;
+  text-align: center;
+  color: #253f3e;
+  font-family: 'Roboto';
+}
+.teamContainer .team-cards .card1 img {
+  width: 300px;
+  height: 300px;
+  align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(128, 0, 128, 0.5);
+  transition: 0.3s;
+}
+.teamContainer .team-cards .card1 p {
+  margin-top: 10%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  padding: 0 10%;
+  font-family: 'Roboto';
+  color: #253f3e;
+  text-align: center;
+}
+.teamContainer .team-cards .card1 .social-media {
+  margin-left: 30%;
+  padding: 5% 0;
+}
+.teamContainer .team-cards .card1 .social-media i {
+  margin-left: 5%;
+  font-size: 2.5rem;
+  color: #800080;
+  cursor: pointer;
+}
+.teamContainer .team-cards .card1 .social-media i:hover {
+  color: #253f3e;
+}
+.teamContainer .team-cards .card2 {
+  display: flex;
+  flex-flow: column wrap;
+  width: 50%;
+}
+.teamContainer .team-cards .card2 h2 {
+  margin: 50px 0;
+  font-size: 3rem;
+  text-align: center;
+  line-height: 1.5rem;
+  color: #253f3e;
+  font-family: 'Roboto';
+}
+.teamContainer .team-cards .card2 img {
+  width: 300px;
+  height: 300px;
+  align-self: center;
+  box-shadow: 0 4px 8px 0 rgba(128, 0, 128, 0.5);
+  transition: 0.3s;
+}
+.teamContainer .team-cards .card2 p {
+  margin-top: 10%;
+  padding: 0 10%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  font-family: 'Roboto';
+  color: #253f3e;
+  text-align: center;
+}
+.teamContainer .team-cards .card2 .social-media {
+  margin-left: 30%;
+  padding: 5% 0;
+}
+.teamContainer .team-cards .card2 .social-media i {
+  margin-left: 5%;
+  font-size: 2.5rem;
+  color: #800080;
+  cursor: pointer;
+}
+.teamContainer .team-cards .card2 .social-media i:hover {
+  color: #253f3e;
 }
