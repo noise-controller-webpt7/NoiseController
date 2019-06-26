@@ -1,0 +1,331 @@
+.abtContainer{
+    margin: 0 auto;
+    width: 100%;
+    background: @beige;
+    padding: 10% 0;
+   
+
+    .abtHero {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        padding-bottom: 3%;
+        
+  
+            .hero-text {
+                display: flex;
+                flex-flow: column wrap;
+                width: 50%;
+            
+                h1 {
+                    font-size: 3rem;
+                    line-height: 1rem;
+                    color: @dark;
+                    font-family: @font;
+                    margin-top: 50px;
+                    text-align: center;
+                }
+
+                h2 {
+                    margin-top: 7%;
+                    font-size: 2rem;
+                    line-height: 1.5rem;
+                    color: @dark;
+                    font-family: @font;
+                    text-align: center;
+                }
+
+                p {
+                    margin-top: 3%;
+                    margin-left: 10%;
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    font-family: @font;
+                    color: @dark;
+                    .center();
+                }
+
+        }
+
+        .abt-hero-img{
+            margin: 30px 50px;
+            .center();
+            border-radius: 30px;
+            box-shadow: 0 4px 8px 0 rgba(128, 0, 128, 0.5);
+            transition: 0.3s;
+
+        }
+    }
+    .abt-mainContent{
+        display: flex;
+        flex-flow: row wrap;
+        margin: 10% 0;
+
+        .abt-top{
+            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 10%;
+            background: @dark;
+
+
+            
+            i {
+                margin: 10% 0;
+                font-size: 5rem;
+                line-height: 1.5rem;
+                color: @beige;
+                
+            }
+
+            h3 {
+                margin-top: 10%;
+                font-size: 2rem;
+                line-height: 1.5rem;
+                color: @beige;
+                font-family: @font;
+            }
+
+            p {
+                margin-top: 8%;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-family: @font;
+                color: @beige;
+                text-align: center;
+            }
+
+
+        }
+        .abt-bottom{
+            width: 50%;
+            display: flex;
+            flex-flow: column wrap;
+            align-items: center;
+            padding: 10%;
+            background: @purple;
+
+
+            
+            i {
+                margin: 10% 0;
+                font-size: 5rem;
+                line-height: 1.5rem;
+                color: @beige;
+                
+            }
+
+            h3 {
+                margin-top: 10%;
+                font-size: 2rem;
+                line-height: 1.5rem;
+                color: @beige;
+                font-family: @font;
+            }
+
+            p {
+                margin-top: 8%;
+                font-size: 1.5rem;
+                line-height: 2rem;
+                font-family: @font;
+                color: @beige;
+                text-align: center;
+            }
+        }
+
+    }
+
+    .abt-blog-ref {
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        width: 100%;
+        align-items: center;
+        margin-top: 10%;
+
+
+            .abt-img{
+                margin: 5%;
+                .center();
+                border-radius: 30px;
+                box-shadow: 0 4px 8px 0 rgba(128, 0, 128, 0.5);
+                transition: 0.3s;
+            }
+        
+  
+            .abt-blog {
+                display: flex;
+                flex-flow: column wrap;
+                width: 45%;
+                align-items: center;
+
+
+                h3 {
+                    margin-top: 10%;
+                    font-size: 2.5rem;
+                    line-height: 1.5rem;
+                    color: @dark;
+                    font-family: @font;
+                    text-align: center;
+                }
+
+                p {
+                    margin: 5%;
+                    padding: 3% 5%;
+                    font-size: 1.5rem;
+                    line-height: 1.8rem;
+                    font-family: @font;
+                    color: @dark;
+                    text-align: center;
+                }
+
+                button, .blogbtn {
+                    padding: 10px 5px;
+                    width: 150px;
+                    align-content: center;
+                    border: 2px solid @purple;
+                    border-radius: 10px;
+                    background: @purple;
+                    color: @beige;
+                    cursor: pointer;
+                    outline: none;
+    
+                }
+               
+        }
+
+    }
+
+}
+
+// tablet views
+
+@media @tablet {
+
+    .abtContainer{
+    
+        .abtHero {
+           margin: 0;
+            flex-flow: row-reverse wrap;
+
+                .hero-text {
+                    display: flex;
+                    flex-flow: column wrap;
+                    width: 90%;
+                    .center();
+                
+                    h1 {
+                        font-size: 3.5rem;
+                        margin-top: 3%;
+                    }
+    
+                    h2 {
+                        margin-top: 7%;
+                        
+                    }
+    
+                    p {
+                        margin-top: 3%;
+                        margin-left: 0%;
+                        
+                    }
+    
+            }
+    
+            .abt-hero-img{
+                // add border box shadow on image.... floating purple 
+                margin: 5%;
+                .center();
+                border-radius: 30px;
+    
+            }
+        }
+        .abt-mainContent{
+            
+    
+            .abt-top{
+                width: 100%;
+                padding: 5%;
+                
+                i {
+                    margin: 5% 0;
+                    font-size: 6rem;
+                    
+                }
+    
+                h3 {
+                    margin-top: 5%;
+                    font-size: 2.5rem;
+                }
+    
+                p {
+                    margin: 5%;
+                    padding: 0 3%;
+                    
+                }
+    
+    
+            }
+            .abt-bottom{
+                width: 100%;
+                padding: 5%;
+                
+                i {
+                    margin: 5% 0;
+                    font-size: 6rem;
+                }
+    
+                h3 {
+                    margin-top: 5%;
+                    font-size: 2.5rem;
+                }
+    
+                p {
+                    margin-top: 5%;
+                    padding: 0 4%;
+                }
+            }
+    
+        }
+    
+        .abt-blog-ref {
+            margin-top: 5%;
+    
+    
+                .abt-img{
+                     
+                }
+            
+      
+                .abt-blog {
+                    
+                    width: 100%;
+                   
+                    h3 {
+                        margin-top: 5%;
+                        font-size: 2.5rem;
+                        
+                    }
+    
+                    p {
+                        margin: 3%;
+                        padding: 3%;
+    
+                    }
+    
+                    button, .blogbtn {
+                        padding: 15px 5px;
+                        width: 300px;
+                        font-size: 2rem;
+                        
+        
+                    }
+                   
+            }
+    
+        }
+    
+    }
+}
