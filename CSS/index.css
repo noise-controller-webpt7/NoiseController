@@ -419,22 +419,32 @@ footer .foot .foot-bottom p {
   text-align: center;
   color: #DECEB6;
 }
-h1 {
+html {
+  background-image: linear-gradient(to bottom right, #800080, #DECEB6);
+}
+.homeContent h1 {
   font-size: 3rem;
   font-family: 'Roboto';
+  color: #253f3e;
+  margin-bottom: 1%;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Roboto';
+  color: #253f3e;
 }
 h3 {
   font-size: 1.5rem;
   font-family: 'Roboto';
+  color: #253f3e;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: 'Roboto';
-  color: #F6F5F0;
+  color: #253f3e;
+}
+.homeContent p {
+  margin-right: 5%;
 }
 header {
   width: 80%;
@@ -445,20 +455,90 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 80%;
-  background-color: lightblue;
-  border-radius: 30px;
+  width: 100%;
+  background-color: #DECEB6;
 }
-.bodyContainer .container {
+.bodyContainer .homeContainer {
   display: flex;
-  margin: 1% 3%;
+  justify-content: center;
+  margin: 1% auto 0;
+  width: 100%;
+  padding: 5% 1% 3%;
 }
-.bodyContainer .container div {
-  margin: 10px;
+.bodyContainer .homeContainer .homeContent {
+  width: 60%;
 }
-.bodyContainer .container img {
+.bodyContainer .homeContainer .homeImg {
+  width: 30%;
+}
+.bodyContainer .homeContainer .oddBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: left;
+  background-color: #253f3e;
+  padding: 2%;
+  width: 20%;
+  margin-bottom: 30px;
+}
+.bodyContainer .homeContainer .oddBottom ul {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  align-self: flex-start;
+  list-style-type: circle;
+}
+.bodyContainer .homeContainer .oddBottom h2,
+.bodyContainer .homeContainer .oddBottom li,
+.bodyContainer .homeContainer .oddBottom button {
+  color: white;
+  background-color: #253f3e;
+}
+.bodyContainer .homeContainer .oddBottom button:hover {
+  transition: 0.5s !important;
+  background: #4b7f7d !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+.bodyContainer .homeContainer .evenBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #800080;
+  padding: 2%;
+  width: 20%;
+  margin: 0 10% 30px;
+}
+.bodyContainer .homeContainer .evenBottom ul {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  align-self: flex-start;
+  list-style-type: circle;
+}
+.bodyContainer .homeContainer .evenBottom h2,
+.bodyContainer .homeContainer .evenBottom li,
+.bodyContainer .homeContainer .evenBottom button {
+  color: white ;
+  background-color: #800080;
+}
+.bodyContainer .homeContainer .evenBottom button:hover {
+  transition: 0.5s !important;
+  background: #e600e6 !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
+}
+.bodyContainer .homeContainer img {
   height: 200px;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+.bodyContainer .homeContainer button {
+  border: solid white 1px;
+  border-radius: 10px;
+  font-size: 2rem;
+  width: 70%;
+  cursor: pointer;
 }
 .abtContainer {
   margin: 0 auto;
@@ -912,25 +992,35 @@ header {
   color: #DECEB6;
   border: 1px solid #253f3e;
 }
+.blogHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5%;
+}
+.blogHeader p,
+.blogHeader h1 {
+  color: white !important;
+  margin-bottom: 10px !important;
+}
 .blogContainer {
   display: flex;
   flex-direction: column;
-  margin: 1% auto;
-  width: 80%;
-  background-color: lightblue;
-  border-radius: 30px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #DECEB6;
 }
 .blogContainer section {
   display: flex;
   justify-content: center;
   margin: 1% auto;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
 }
 .blogContainer section .blog {
   display: felx;
   background-color: #F6F5F0;
-  margin: 2% 2%;
+  margin: 15px 2%;
   width: 25%;
   padding: 2%;
   text-align: center;
@@ -939,38 +1029,45 @@ header {
   display: flex;
   justify-content: center;
   margin: 5% auto;
-  background-color: lightblue;
+  background-color: #800080;
   border-radius: 10px;
   padding: 2px;
   width: 50%;
+  color: white;
 }
 .blogContainer section .blog .date {
   margin: 5% 0%;
   text-align: center;
 }
 .blogContainer section .blog p {
-  color: black;
+  color: #253f3e;
   text-align: left;
 }
 .tabContainer {
   display: flex;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 15px auto;
   width: 100%;
   height: 1.5%;
   justify-content: space-evenly;
-  border-radius: 30px;
   background-color: gray;
 }
 .tabContainer .tab {
   display: flex;
   align-items: center;
   color: #F6F5F0;
-  border: 2px dashed black;
+  border: 2px solid white;
   border-radius: 15px;
   font-family: 'Roboto';
   padding: 1%;
   cursor: pointer;
   margin: 3px 0px;
+  font-size: 2rem;
+}
+.tabContainer .tab:hover {
+  transition: 0.5s !important;
+  background: #b3b3b3 !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
 }
 .teamContainer {
   max-width: 100%;
