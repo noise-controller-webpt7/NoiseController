@@ -495,9 +495,10 @@ header {
   background-color: #253f3e;
 }
 .bodyContainer .homeContainer .oddBottom button:hover {
-  transition: 1s !important;
+  transition: 0.5s !important;
   background: #5e9f9d !important;
   color: #000000 !important;
+  border-color: #000000 !important;
 }
 .bodyContainer .homeContainer .evenBottom {
   display: flex;
@@ -523,9 +524,10 @@ header {
   background-color: #800080;
 }
 .bodyContainer .homeContainer .evenBottom button:hover {
-  transition: 1s !important;
+  transition: 0.5s !important;
   background: #ff1aff !important;
   color: #000000 !important;
+  border-color: #000000 !important;
 }
 .bodyContainer .homeContainer img {
   height: 200px;
@@ -1060,6 +1062,12 @@ header {
   cursor: pointer;
   margin: 3px 0px;
   font-size: 2rem;
+}
+.tabContainer .tab:hover {
+  transition: 0.5s !important;
+  background: #ffffff !important;
+  color: #000000 !important;
+  border-color: #000000 !important;
 }
 .teamContainer {
   max-width: 100%;
