@@ -50,7 +50,7 @@ header {
     justify-content: center;
     margin: 1% auto 0;
     width: 100%;
-    padding: 1%;
+    padding: 5% 1% 3%;
 
     .homeContent {
       width: 60%;
@@ -65,14 +65,28 @@ header {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      background-color: @dark !important;
+      text-align: left;
+      background-color: @dark;
       padding: 2%;
+      width: 20%;
+      margin-bottom: 30px;
 
+      ul {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        align-self: flex-start;
+        list-style-type: circle;
+      }
 
-      h2, p, button{
-        color: white !important;
+      h2, li, button{
+        color: white;
         background-color: @dark;
+      }
+
+      button:hover {
+        transition: 1s !important;
+        background: lighten(@dark, 30%) !important;
+        color: darken(white, 100%) !important;
       }
     }
 
@@ -82,12 +96,27 @@ header {
       justify-content: center;
       align-items: center;
       text-align: center;
-      background-color: @purple !important;
+      background-color: @purple;
       padding: 2%;
+      width: 20%;
+      margin: 0 10% 30px;
 
-      h2, p, button{
-        color: white !important;
+      ul {
+        font-size: 1.5rem;
+        line-height: 3rem;
+        align-self: flex-start;
+        list-style-type: circle;
+      }
+
+      h2, li, button{
+        color: white ;
         background-color: @purple;
+      }
+
+      button:hover {
+        transition: 1s !important;
+        background: lighten(@purple, 30%) !important;
+        color: darken(white, 100%) !important;
       }
     }
 
@@ -95,10 +124,10 @@ header {
       height: 200px;
       border-radius: 10px;
     }
+
+    button {
+      .btn();
+    }
   }
 
-}
-
-button {
-  .btn();
 }

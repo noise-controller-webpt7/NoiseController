@@ -463,7 +463,7 @@ header {
   justify-content: center;
   margin: 1% auto 0;
   width: 100%;
-  padding: 1%;
+  padding: 5% 1% 3%;
 }
 .bodyContainer .homeContainer .homeContent {
   width: 60%;
@@ -476,15 +476,28 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
-  background-color: #253f3e !important;
+  text-align: left;
+  background-color: #253f3e;
   padding: 2%;
+  width: 20%;
+  margin-bottom: 30px;
+}
+.bodyContainer .homeContainer .oddBottom ul {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  align-self: flex-start;
+  list-style-type: circle;
 }
 .bodyContainer .homeContainer .oddBottom h2,
-.bodyContainer .homeContainer .oddBottom p,
+.bodyContainer .homeContainer .oddBottom li,
 .bodyContainer .homeContainer .oddBottom button {
-  color: white !important;
+  color: white;
   background-color: #253f3e;
+}
+.bodyContainer .homeContainer .oddBottom button:hover {
+  transition: 1s !important;
+  background: #5e9f9d !important;
+  color: #000000 !important;
 }
 .bodyContainer .homeContainer .evenBottom {
   display: flex;
@@ -492,24 +505,38 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  background-color: #800080 !important;
+  background-color: #800080;
   padding: 2%;
+  width: 20%;
+  margin: 0 10% 30px;
+}
+.bodyContainer .homeContainer .evenBottom ul {
+  font-size: 1.5rem;
+  line-height: 3rem;
+  align-self: flex-start;
+  list-style-type: circle;
 }
 .bodyContainer .homeContainer .evenBottom h2,
-.bodyContainer .homeContainer .evenBottom p,
+.bodyContainer .homeContainer .evenBottom li,
 .bodyContainer .homeContainer .evenBottom button {
-  color: white !important;
+  color: white ;
   background-color: #800080;
+}
+.bodyContainer .homeContainer .evenBottom button:hover {
+  transition: 1s !important;
+  background: #ff1aff !important;
+  color: #000000 !important;
 }
 .bodyContainer .homeContainer img {
   height: 200px;
   border-radius: 10px;
 }
-button {
+.bodyContainer .homeContainer button {
   border: solid white 1px;
   border-radius: 10px;
-  font-size: 2.5rem;
-  width: 50%;
+  font-size: 2rem;
+  width: 70%;
+  cursor: pointer;
 }
 .abtContainer {
   margin: 0 auto;
@@ -967,12 +994,12 @@ button {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #253f3e;
-  padding: 3% 3% 2.5%;
+  padding: 5%;
 }
 .blogHeader p,
 .blogHeader h1 {
   color: white !important;
+  margin-bottom: 10px !important;
 }
 .blogContainer {
   display: flex;
