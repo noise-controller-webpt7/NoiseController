@@ -496,7 +496,7 @@ header {
 }
 .bodyContainer .homeContainer .oddBottom button:hover {
   transition: 0.5s !important;
-  background: #5e9f9d !important;
+  background: #4b7f7d !important;
   color: #000000 !important;
   border-color: #000000 !important;
 }
@@ -525,7 +525,7 @@ header {
 }
 .bodyContainer .homeContainer .evenBottom button:hover {
   transition: 0.5s !important;
-  background: #ff1aff !important;
+  background: #e600e6 !important;
   color: #000000 !important;
   border-color: #000000 !important;
 }
@@ -1065,7 +1065,7 @@ header {
 }
 .tabContainer .tab:hover {
   transition: 0.5s !important;
-  background: #ffffff !important;
+  background: #b3b3b3 !important;
   color: #000000 !important;
   border-color: #000000 !important;
 }
