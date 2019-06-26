@@ -330,22 +330,32 @@ footer .foot .foot-bottom p {
   text-align: center;
   color: #DECEB6;
 }
-h1 {
+html {
+  background-image: linear-gradient(to bottom right, #ADB53F, #DECEB6);
+}
+.homeContent h1 {
   font-size: 3rem;
   font-family: 'Roboto';
+  color: #253f3e;
+  margin-bottom: 1%;
 }
 h2 {
-  font-size: 2rem;
+  font-size: 2.5rem;
   font-family: 'Roboto';
+  color: #253f3e;
 }
 h3 {
   font-size: 1.5rem;
   font-family: 'Roboto';
+  color: #253f3e;
 }
 p {
-  font-size: 1rem;
+  font-size: 1.5rem;
   font-family: 'Roboto';
-  color: #F6F5F0;
+  color: #253f3e;
+}
+.homeContent p {
+  margin-right: 5%;
 }
 header {
   width: 80%;
@@ -356,20 +366,61 @@ header {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
-  width: 80%;
-  background-color: lightblue;
-  border-radius: 30px;
+  width: 100%;
+  background-color: #DECEB6;
 }
-.bodyContainer .container {
+.bodyContainer .homeContainer {
   display: flex;
-  margin: 1% 3%;
+  justify-content: center;
+  margin: 1% auto 0;
+  width: 100%;
+  padding: 1%;
 }
-.bodyContainer .container div {
-  margin: 10px;
+.bodyContainer .homeContainer .homeContent {
+  width: 60%;
 }
-.bodyContainer .container img {
+.bodyContainer .homeContainer .homeImg {
+  width: 30%;
+}
+.bodyContainer .homeContainer .oddBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #253f3e !important;
+  padding: 2%;
+}
+.bodyContainer .homeContainer .oddBottom h2,
+.bodyContainer .homeContainer .oddBottom p,
+.bodyContainer .homeContainer .oddBottom button {
+  color: white !important;
+  background-color: #253f3e;
+}
+.bodyContainer .homeContainer .evenBottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #800080 !important;
+  padding: 2%;
+}
+.bodyContainer .homeContainer .evenBottom h2,
+.bodyContainer .homeContainer .evenBottom p,
+.bodyContainer .homeContainer .evenBottom button {
+  color: white !important;
+  background-color: #800080;
+}
+.bodyContainer .homeContainer img {
   height: 200px;
-  border-radius: 20px;
+  border-radius: 10px;
+}
+button {
+  border: solid white 1px;
+  border-radius: 10px;
+  font-size: 2.5rem;
+  width: 50%;
 }
 .abtContainer {
   margin: 0 auto;
