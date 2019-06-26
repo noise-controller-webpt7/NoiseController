@@ -136,6 +136,8 @@ html {
 html,
 body {
   font-family: 'Roboto', sans-serif;
+  max-width: 100%;
+  overflow-x: hidden;
 }
 h1,
 h2,
@@ -198,7 +200,7 @@ img {
   margin: 10px 0;
 }
 .nav-header img {
-  width: 250px;
+  width: 20%;
   height: auto;
   margin-left: 5%;
 }
@@ -209,33 +211,87 @@ img {
   justify-content: space-between;
   justify-content: center;
   align-content: center;
+  padding-right: 3%;
+  padding-left: 10%;
 }
 .nav-header nav a {
   font: 'Roboto';
   color: #DECEB6;
   text-decoration: none;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   align-content: space-between;
   align-items: center;
   padding-top: 10px;
-  padding-right: 80px;
+  padding-right: 10%;
   justify-content: center;
   align-content: center;
 }
+.nav-header nav a:nth-last-child(-n+3) {
+  white-space: nowrap;
+}
 .nav-header nav a:last-child {
   border: 1px solid #800080;
-  padding: 1.3rem;
+  padding: 1rem 3rem;
   margin-top: 10px;
   border-radius: 10px;
-  margin-right: 80px;
+  margin-right: 10%;
   align-items: center;
   justify-content: center;
   align-content: center;
+  white-space: nowrap;
 }
 .nav-header nav a:last-child:hover {
   background: #DECEB6;
   color: #800080;
   border: 1px solid #DECEB6;
+}
+@media (max-width: 800px) {
+  .nav-header img {
+    width: 15%;
+    height: auto;
+    margin-left: 2%;
+  }
+  .nav-header nav {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    justify-content: center;
+    align-content: center;
+    padding-right: 2%;
+    padding-left: 8%;
+  }
+  .nav-header nav a {
+    font: 'Roboto';
+    color: #DECEB6;
+    text-decoration: none;
+    font-size: 1.1rem;
+    align-content: space-between;
+    align-items: center;
+    padding-top: 10px;
+    padding-right: 8%;
+    justify-content: center;
+    align-content: center;
+  }
+  .nav-header nav a:nth-last-child(-n+3) {
+    white-space: nowrap;
+  }
+  .nav-header nav a:last-child {
+    border: 1px solid #800080;
+    padding: 1rem 1.8rem;
+    margin-top: 10px;
+    border-radius: 10px;
+    margin-right: 8%;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    white-space: nowrap;
+  }
+  .nav-header nav a:last-child:hover {
+    background: #DECEB6;
+    color: #800080;
+    border: 1px solid #DECEB6;
+  }
 }
 footer .foot {
   display: flex;
@@ -626,11 +682,11 @@ header {
   align-content: center;
   display: flex;
   justify-content: space-around;
-  padding-right: 20px;
+  padding-right: 5%;
 }
 .contactContainer .contact {
   width: 70%;
-  padding: 40px;
+  padding: 4%;
   background: #DECEB6;
 }
 .contactContainer .contact h1 {
@@ -661,8 +717,8 @@ header {
 }
 .contactContainer .contact form input[type="text"],
 .contactContainer .contact form input[id="first"] {
-  padding: 10px 100px;
-  margin: 20px 10px;
+  padding: 1% 13%;
+  margin: 20px 7px;
   border-radius: 10px;
   background: bisque;
   color: #800080;
@@ -670,7 +726,7 @@ header {
 }
 .contactContainer .contact form input[type="text"],
 .contactContainer .contact form input[id="last"] {
-  padding: 10px 100px;
+  padding: 1% 13%;
   margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
@@ -678,7 +734,7 @@ header {
   font-size: 1.3rem;
 }
 .contactContainer .contact form input[type="email"] {
-  padding: 10px 100px;
+  padding: 1% 13%;
   margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
@@ -686,7 +742,7 @@ header {
   font-size: 1.3rem;
 }
 .contactContainer .contact form input[type="tel"] {
-  padding: 10px 100px;
+  padding: 1% 13%;
   margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
@@ -694,7 +750,7 @@ header {
   font-size: 1.3rem;
 }
 .contactContainer .contact form input[type="textarea"] {
-  padding: 100px 290px;
+  padding: 20% 38%;
   margin: 20px 10px;
   border-radius: 10px;
   background: bisque;
