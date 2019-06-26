@@ -192,7 +192,6 @@ img {
 .nav-header {
   display: flex;
   flex-direction: row;
-  justify-content: center;
   height: auto;
   justify-content: space-between;
   align-content: center;
