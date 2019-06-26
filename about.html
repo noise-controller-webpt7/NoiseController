@@ -11,6 +11,7 @@
 
      <!-- font awesome -->
      <script src="https://kit.fontawesome.com/c0dd629bc8.js"></script>
+
      <!-- Favicon Script -->
      <link rel="apple-touch-icon" sizes="180x180" href="favicon_io/apple-touch-icon.png">
      <link rel="icon" type="image/png" sizes="32x32" href="favicon_io/favicon-32x32.png">
@@ -19,18 +20,30 @@
 
     </head>
 <body>
+<!-- js script -->
+        <script defer="defer" src="./JS/dropdown.js"></script>
+        <script defer="defer" src="./JS/tabs.js"></script>
+        
+
     <div class="container">
 <!-- Header Starts Here (same on all pages) -->
     <header class="nav-header">
-            <img src="/img/nc1.png" alt="">
-                <nav class="nav-bar">
-                    <a href="./index.html">Home</a>
-                    <a href="./about.html">About</a>
-                    <a href="./team.html">Meet the Team</a>
-                    <a href="./blog.html">Blog</a>
-                    <a href="./contact.html">Contact Us</a>
-                    <a href="#">Start Today!</a>
+            
+                <img src="/img/nc1.png" alt="">
+                 
+                <nav class="nav-bar dropdown-content dropdown-hidden">
+                    <a class="dropdown-link" href="./index.html">Home</a>
+                    <a class="dropdown-link" href="./about.html">About</a>
+                    <a class="dropdown-link" href="./team.html">Team</a>
+                    <a class="dropdown-link" href="./blog.html">Blog</a>
+                    <a class="dropdown-link" href="./contact.html">Contact Us</a>
+                    <a class="dropdown-link" href="#">Start Today!</a>
                 </nav>
+                <div class="dropdown">
+                        <div class="dropdown-button">
+                                <i class="fas fa-bars line1"></i>
+                        </div>
+            </div>
             </header>
  <!-- Main Content Starts Here  possibly add imgs -->
        
