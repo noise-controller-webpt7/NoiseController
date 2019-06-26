@@ -789,25 +789,35 @@ button {
   color: #DECEB6;
   border: 1px solid #253f3e;
 }
+.blogHeader {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #253f3e;
+  padding: 3% 3% 2.5%;
+}
+.blogHeader p,
+.blogHeader h1 {
+  color: white !important;
+}
 .blogContainer {
   display: flex;
   flex-direction: column;
-  margin: 1% auto;
-  width: 80%;
-  background-color: lightblue;
-  border-radius: 30px;
+  margin: 0 auto;
+  width: 100%;
+  background-color: #DECEB6;
 }
 .blogContainer section {
   display: flex;
   justify-content: center;
   margin: 1% auto;
-  width: 80%;
+  width: 100%;
   flex-wrap: wrap;
 }
 .blogContainer section .blog {
   display: felx;
   background-color: #F6F5F0;
-  margin: 2% 2%;
+  margin: 15px 2%;
   width: 25%;
   padding: 2%;
   text-align: center;
@@ -816,38 +826,39 @@ button {
   display: flex;
   justify-content: center;
   margin: 5% auto;
-  background-color: lightblue;
+  background-color: #800080;
   border-radius: 10px;
   padding: 2px;
   width: 50%;
+  color: white;
 }
 .blogContainer section .blog .date {
   margin: 5% 0%;
   text-align: center;
 }
 .blogContainer section .blog p {
-  color: black;
+  color: #253f3e;
   text-align: left;
 }
 .tabContainer {
   display: flex;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 15px auto;
   width: 100%;
   height: 1.5%;
   justify-content: space-evenly;
-  border-radius: 30px;
   background-color: gray;
 }
 .tabContainer .tab {
   display: flex;
   align-items: center;
   color: #F6F5F0;
-  border: 2px dashed black;
+  border: 2px solid white;
   border-radius: 15px;
   font-family: 'Roboto';
   padding: 1%;
   cursor: pointer;
   margin: 3px 0px;
+  font-size: 2rem;
 }
 .teamContainer {
   max-width: 100%;
