@@ -437,6 +437,81 @@ footer .foot .foot-bottom p {
   text-align: center;
   color: #DECEB6;
 }
+@media (max-width: 800px) {
+  footer .foot .foot-left p {
+    font-size: 1.2rem;
+  }
+  footer .foot .foot-left button {
+    padding: 6px 5px;
+    width: 170px;
+  }
+  footer .foot .foot-bottom p {
+    font-size: 1rem;
+    margin-top: 20%;
+  }
+}
+@media (max-width: 500px) {
+  footer .foot {
+    width: 100%;
+  }
+  footer .foot .foot-left {
+    width: 100%;
+    background: #253f3e;
+    justify-content: center;
+    align-content: center;
+  }
+  footer .foot .foot-left img {
+    align-self: center;
+  }
+  footer .foot .foot-left p {
+    align-self: center;
+    margin-top: 5%;
+    padding-bottom: 8%;
+    text-align: center;
+    font-size: 1.3rem;
+  }
+  footer .foot .foot-left button {
+    padding: 10px 5px;
+    width: 350px;
+    align-self: center;
+    font-size: 1.5rem;
+  }
+  footer .foot .foot-right {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    background: #800080;
+    margin-top: 10%;
+  }
+  footer .foot .foot-right h3 {
+    margin-top: 30px;
+    margin-left: 0%;
+    font-size: 2.5rem;
+    text-align: center;
+  }
+  footer .foot .foot-right address {
+    margin-left: 0%;
+    text-align: center;
+  }
+  footer .foot .foot-right .social-icons {
+    margin-left: 5%;
+    align-self: center;
+  }
+  footer .foot .foot-right .social-icons i {
+    margin-left: 5%;
+    padding: 5%;
+    font-size: 3rem;
+  }
+  footer .foot .foot-bottom {
+    width: 100%;
+    align-content: center;
+    align-self: center;
+  }
+  footer .foot .foot-bottom p {
+    margin-left: 43%;
+    text-align: center;
+  }
+}
 html {
   background-image: linear-gradient(to bottom right, #800080, #DECEB6);
 }
@@ -824,23 +899,6 @@ header {
   .abtContainer .abt-blog-ref .abt-img {
     width: 90%;
     height: 90%;
-  }
-  .abtContainer .abt-blog-ref .abt-blog {
-    width: 100%;
-  }
-  .abtContainer .abt-blog-ref .abt-blog h3 {
-    margin-top: 5%;
-    font-size: 2.5rem;
-  }
-  .abtContainer .abt-blog-ref .abt-blog p {
-    margin: 3%;
-    padding: 3%;
-  }
-  .abtContainer .abt-blog-ref .abt-blog button,
-  .abtContainer .abt-blog-ref .abt-blog .blogbtn {
-    padding: 15px 5px;
-    width: 300px;
-    font-size: 2rem;
   }
 }
 .contactContainer {
