@@ -3,15 +3,22 @@ class Dropdown {
       
       this.element = element;
       
-      this.button = element.querySelector(".dropdown-button");
+      this.button = element.querySelector(".line1");
+     
+      this.button.style.color="#DECEB6";
+      this.button.style.fontSize="3rem";
+      // this.button.style.position="relative";
+      // this.button.style.right="-90%";
+
+      console.log(this.button);
       
       this.content = document.querySelector(".dropdown-content");
-      
+      console.log(this.content);
       
       this.button.addEventListener('click', () =>{
         this.toggleContent();
       })
-    }
+    }  
   
     toggleContent() {
       
@@ -20,4 +27,4 @@ class Dropdown {
     }
   }
   
- let dropdowns = document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));

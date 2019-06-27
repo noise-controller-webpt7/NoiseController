@@ -198,6 +198,9 @@ img {
   width: 100%;
   margin: 10px 0;
 }
+.nav-header .dropdown {
+  display: none;
+}
 .nav-header img {
   width: 20%;
   height: auto;
@@ -247,7 +250,7 @@ img {
 @media (max-width: 800px) {
   .nav-header {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
   }
   .nav-header img {
     width: 25%;
@@ -259,42 +262,49 @@ img {
     padding-left: 8%;
   }
   .nav-header nav a {
-    visibility: hidden;
     font-size: 1.1rem;
     padding-right: 8%;
   }
   .nav-header nav a:last-child {
     padding: 1rem 1.8rem;
-    margin-top: 10px;
-    border-radius: 10px;
-    margin-right: 8%;
+    border: 0px solid #253f3e;
+    margin-top: 0px;
+    border-radius: 0px;
+    margin-right: 0%;
+  }
+  .nav-header nav a:hover {
+    background: #DECEB6;
+    color: #800080;
+  }
+  .nav-header nav a:last-child:hover {
+    background: #800080;
+    color: #DECEB6;
+    border: 0px solid #800080;
   }
 }
-.dropdown {
+.nav-header .dropdown {
+  display: initial;
   z-index: 2;
   position: absolute;
-  right: 25px;
+  width: 300px;
   cursor: pointer;
 }
-.dropdown .dropdown-button {
-  width: 25px;
-  height: 25px;
+i.line1 {
+  float: right;
+  font-size: 2rem;
   cursor: pointer;
 }
-.dropdown .dropdown-button .line1 {
-  color: #DECEB6;
-  font-size: 3rem;
-}
-.dropdown .dropdown-content {
-  width: 30%;
+nav.dropdown-content {
+  width: 100%;
   position: absolute;
   background: #253f3e;
+  padding: 10% 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 10px;
 }
-.dropdown .dropdown-link {
+a.dropdown-link {
   width: 100%;
   text-align: center;
   padding: 15px 0;
@@ -302,14 +312,24 @@ img {
   color: #DECEB6;
   text-decoration: none;
 }
-.dropdown .dropdown-hidden {
+a.dropdown-link:hover {
+  background: #DECEB6;
+  color: #800080;
+  padding: 25px 150px;
+}
+a.dropdown-link:last-child:hover {
+  background: #DECEB6;
+  color: #800080;
+  padding: 25px 150px;
+}
+nav.dropdown-hidden {
   display: none;
 }
 @media (max-width: 500px) {
   .nav-header img {
-    width: 15%;
+    width: 25%;
     height: auto;
-    margin-left: 2%;
+    margin-left: 10%;
   }
   .nav-header nav {
     padding-right: 2%;
