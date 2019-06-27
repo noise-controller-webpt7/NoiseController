@@ -443,7 +443,7 @@ h3 {
   font-family: 'Roboto';
   color: #253f3e;
   line-height: 2rem;
-  margin: 2% 2% 0 2%;
+  margin: 2% 2% 0 0;
 }
 header {
   width: 80%;
@@ -462,34 +462,32 @@ header {
   display: flex;
   justify-content: center;
   flex-direction: row;
-  margin: 1% auto 0;
+  margin: 0 auto;
   width: 100%;
-  padding: 0 1% 5%;
+  padding: 3% 3% 2%;
 }
 @media (max-width: 800px) {
   .bodyContainer .homeContainer {
     flex-direction: column;
     align-items: center;
     flex-direction: column-reverse;
+    margin: 30px 0 0;
   }
   .bodyContainer .homeContainer:first-child {
     flex-direction: column;
-    margin-bottom: -30px;
   }
   .bodyContainer .homeContainer:last-child {
     flex-direction: column;
-    margin-top: 30px;
   }
 }
 .bodyContainer .homeContainer .homeContent {
   width: 60%;
-  padding: 0px 4%;
+  padding: 0 4%;
 }
 @media (max-width: 800px) {
   .bodyContainer .homeContainer .homeContent {
     width: 90%;
     text-align: center;
-    margin: 30px 0 0;
   }
 }
 .bodyContainer .homeContainer .homeImg {
@@ -499,11 +497,12 @@ header {
 .bodyContainer .homeContainer .homeImg img {
   width: 100%;
   height: auto;
+  border-radius: 10px;
 }
 @media (max-width: 800px) {
   .bodyContainer .homeContainer .homeImg {
     width: 90%;
-    margin: 30px 0 0;
+    margin: 30px 0;
   }
 }
 .oddBottom {
@@ -573,10 +572,6 @@ header {
   background: #e600e6;
   color: #000000;
   border-color: #000000;
-}
-img {
-  height: 200px;
-  border-radius: 10px;
 }
 button {
   border: solid white 1px;
