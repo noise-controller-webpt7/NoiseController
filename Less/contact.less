@@ -230,5 +230,187 @@
 //  tablet view
 
 @media @tablet {
+
+    .contactContainer {
+    
+        .contact {
+
+
+    
+                p{
+                   padding-top: 3%;
+                   padding: 0 5%;
+                }
+                
+                form {
+
+    
+                    input[type="text"], input[id="first"] {
+                            padding: 1% 32%; 
+                            margin-top: 10px;
+                            
+                        }
+    
+                    input[type="text"], input[id="last"] {
+                            padding: 1% 32%; 
+                            margin-top: 10px;
+                        }
+                    input[type="email"] {
+                            padding: 1% 32%; 
+                            margin-top: 10px;
+                        }
+    
+                    input[type="tel"] {
+                            padding: 1% 32%; 
+                            margin-top: 20px;
+                        }
+    
+                     input[type="textarea"] {
+                            padding: 18% 32%;
+                            margin-bottom: 20px; 
+                        }
+             }
+        }
+    
+        .contact-side {
+
+            padding-left: 25px;
+            width: 40%;
+ 
+    
+            .box1 {
+                margin-right: 0%;
+                padding: 10% 5%;
+                width: 110%;
+                
+            }
+    
+            .box2 {
+                margin-right: 0%;
+                padding: 10% 5%;
+                margin-top: 10%;
+                width: 110%;
+
+            }
+    
+        }
+    
+     }
+    
+}
+
+//  mobile view
+@media @mobile {
+    .contactContainer {
+        width: 100%;
+        padding-right: 0%;
+        flex-flow: column wrap;
+    
+        .contact {
+            width: 100%;
+            padding: 0%;
+            background: @beige;
+    
+               
+                
+                form {
+                  
+
+    
+                    input[type="text"], input[id="first"] {
+                            padding: 2% 32%; 
+
+                            
+                        }
+    
+                    input[type="text"], input[id="last"] {
+                            padding: 2% 32%; 
+ 
+                        }
+                    input[type="email"] {
+                            padding: 2% 32%; 
+
+                        }
+    
+                    input[type="tel"] {
+                            padding: 2% 32%; 
+
+                        }
+    
+                     input[type="textarea"] {
+                            padding: 20% 38%; 
+
+                        }
+    
+ 
+    
+                        button, .form-btn {
+                                
+                                margin-bottom: 5%;
+                            }
+            
+             }
+    
+    
+        }
+    
+        .contact-side {
+            width: 100%;
+    
+            .box1 {
+                width: 100%;
+                background: @dark;
+                box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5);
+                transition: 0s;
+                margin-top: 5%;
+                margin-right: 5%;
+                margin-left: 0%;
+                padding: 20%;
+    
+                h2{
+                    font-family: @font;
+                    color: @beige;
+                    font-size: 1.8rem;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+    
+                p{
+                    margin-top: 10%;
+                    margin-bottom: 20%;
+                }
+                
+                
+            }
+    
+            .box2 {
+                width: 100%;
+                background: @purple;
+                box-shadow: 0 0px 0px 0 rgba(0, 0, 0, 0.5);
+                transition: 0s;
+                margin-top: 5%;
+                margin-right: 5%;
+                margin-left: 0%;
+                padding: 20%;
+    
+                h2{
+                    font-family: @font;
+                    color: @beige;
+                    font-size: 1.8rem;
+                    margin-top: 10px;
+                    text-align: center;
+                }
+    
+                p{
+                    margin-top: 10%;
+                    margin-bottom: 20%;
+                }
+                
+            }
+    
+        }
+    
+     }
+    
     
 }

@@ -28,3 +28,14 @@ class Dropdown {
   }
   
 document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
+
+
+// new class for reveal on team page
+
+// class Reveal extends Dropdown {
+//   super(Dropdown);
+//   constructor(el) {
+//       this.el = el;
+      
+// }
+// }
