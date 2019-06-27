@@ -443,9 +443,6 @@ p {
   font-family: 'Roboto';
   color: #253f3e;
 }
-.homeContent p {
-  margin-right: 5%;
-}
 header {
   width: 80%;
   margin: 5% auto;
@@ -467,6 +464,7 @@ header {
 }
 .bodyContainer .homeContainer .homeContent {
   width: 60%;
+  padding: 0px 5%;
 }
 .bodyContainer .homeContainer .homeImg {
   width: 30%;
@@ -476,7 +474,7 @@ header {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: left;
+  text-align: center;
   background-color: #253f3e;
   padding: 2%;
   width: 20%;
@@ -485,7 +483,6 @@ header {
 .bodyContainer .homeContainer .oddBottom ul {
   font-size: 1.5rem;
   line-height: 3rem;
-  align-self: flex-start;
   list-style-type: circle;
 }
 .bodyContainer .homeContainer .oddBottom h2,
@@ -514,7 +511,6 @@ header {
 .bodyContainer .homeContainer .evenBottom ul {
   font-size: 1.5rem;
   line-height: 3rem;
-  align-self: flex-start;
   list-style-type: circle;
 }
 .bodyContainer .homeContainer .evenBottom h2,
@@ -537,8 +533,9 @@ header {
   border: solid white 1px;
   border-radius: 10px;
   font-size: 2rem;
-  width: 70%;
+  width: 75%;
   cursor: pointer;
+  padding: 0 1%;
 }
 .abtContainer {
   margin: 0 auto;
