@@ -1033,6 +1033,11 @@ button {
   color: #DECEB6;
   border: 1px solid #253f3e;
 }
+.blog p,
+.blogHeader p {
+  font-size: 2rem;
+  line-height: 2rem;
+}
 .blogHeader {
   display: flex;
   flex-direction: column;
@@ -1043,6 +1048,9 @@ button {
 .blogHeader h1 {
   color: white;
   margin-bottom: 10px;
+}
+.blogHeader h1 {
+  font-size: 3.5rem;
 }
 .blogContainer {
   display: flex;
@@ -1088,15 +1096,15 @@ button {
   display: flex;
   margin: 0 auto 15px auto;
   width: 100%;
-  height: 1.5%;
   justify-content: space-evenly;
   background-color: gray;
 }
 .tabContainer .tab {
   display: flex;
   align-items: center;
+  text-align: center;
   color: #F6F5F0;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 15px;
   font-family: 'Roboto';
   padding: 1%;
