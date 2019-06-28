@@ -16,10 +16,10 @@ class TabLink {
 
     selectTab(){
         let tabs = document.querySelectorAll(".tab");
-        //tabs.forEach(tab => tab.classList.remove("active-tab"));
+        tabs.forEach(tab => tab.classList.remove("active-tab"));
         let blogs = document.querySelectorAll(".blog");
         blogs.forEach(blog => blog.style.display = "none")
-        //this.tabElement.classList.add("active-tab");
+        this.tabElement.classList.add("active-tab");
         this.blogs.forEach(blog => blog.selectBlog());
     }
 }
