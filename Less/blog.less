@@ -1,13 +1,21 @@
+.blog p, .blogHeader p {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
 .blogHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
-    //background-color: @dark;
-
     padding: 5%;
+
     p, h1 {
-    color: white !important;
-    margin-bottom: 10px !important;
+    color: white;
+    margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
     }
 }
 
@@ -63,15 +71,15 @@
     display: flex;
     margin: 0 auto 15px auto;
     width: 100%;
-    height: 1.5%;
     justify-content: space-evenly;
     background-color: gray;
 
     .tab {
         display: flex;
         align-items: center;
+        text-align: center;
         color: @thirdColor;
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 15px;
         font-family: @font;
         padding: 1%;
@@ -81,9 +89,9 @@
     }
 
     .tab:hover {
-        transition: 0.5s !important;
-        background: lighten(gray, 20%) !important;
-        color: darken(white, 100%) !important;
-        border-color: darken(white, 100%) !important;
+        transition: 0.5s;
+        background: lighten(gray, 20%);
+        color: darken(white, 100%);
+        border-color: darken(white, 100%);
       }
 }
