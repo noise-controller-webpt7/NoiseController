@@ -1291,22 +1291,36 @@ button {
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
+  max-width: 1366px;
   background-color: #DECEB6;
 }
 .blogContainer section {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   margin: 1% auto;
   width: 100%;
   flex-wrap: wrap;
 }
+@media (max-width: 800px) {
+  .blogContainer section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .blogContainer section .blog {
-  display: felx;
+  display: flex;
+  flex-direction: column;
   background-color: #F6F5F0;
   margin: 15px 2%;
   width: 25%;
   padding: 2%;
   text-align: center;
+}
+@media (max-width: 800px) {
+  .blogContainer section .blog {
+    width: 90%;
+  }
 }
 .blogContainer section .blog .author {
   display: flex;
@@ -1318,13 +1332,26 @@ button {
   width: 50%;
   color: white;
 }
+@media (max-width: 800px) {
+  .blogContainer section .blog .author {
+    margin: 1% auto;
+  }
+}
 .blogContainer section .blog .date {
   margin: 5% 0%;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .blogContainer section .blog .date {
+    margin: 1% 0;
+  }
+}
 .blogContainer section .blog p {
   color: #253f3e;
   text-align: left;
+}
+.blogContainer section .blog h2 {
+  font-size: 3rem;
 }
 .tabContainer {
   display: flex;

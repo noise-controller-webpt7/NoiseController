@@ -25,23 +25,34 @@
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
+    max-width: 1366px;
     background-color: @beige;
-
 
     section {
         display: flex;
         justify-content: center;
+        flex-direction: row;
         margin: 1% auto;
         width: 100%;
         flex-wrap: wrap;
 
+        @media @tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .blog {
-            display: felx;
+            display: flex;
+            flex-direction: column;
             background-color: @thirdColor;
             margin: 15px 2%;
             width: 25%;
             padding: 2%;
             text-align: center;
+
+            @media @tablet {
+                width: 90%;
+            }
             
             .author {
                 display: flex;
@@ -52,16 +63,28 @@
                 padding: 2px;
                 width: 50%;
                 color: white;
+
+                @media @tablet {
+                    margin: 1% auto;
+                }
             }
 
             .date {
                 margin: 5% 0%;
                 text-align: center;
+
+                @media @tablet {
+                    margin: 1% 0;
+                }
             }
 
             p {
                 color: @dark;
                 text-align: left;
+            }
+
+            h2 {
+                font-size: 3rem;
             }
         }
     }
