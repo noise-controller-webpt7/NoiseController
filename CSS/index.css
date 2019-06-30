@@ -523,6 +523,23 @@ footer .foot .foot-bottom p {
 html {
   background-image: linear-gradient(to bottom right, #800080, #DECEB6);
 }
+.homeHead {
+  margin-top: 39px;
+  width: 100%;
+  height: 600px;
+  margin: 0 auto;
+  background: url('/img/home-hero.jpg') no-repeat;
+}
+.homeHead .homehero h2 {
+  font-size: 6rem;
+  line-height: 1rem;
+  color: #be3abe;
+  font-family: 'Roboto';
+  padding-top: 260px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+}
 .homeContent h1 {
   font-size: 3rem;
   font-family: 'Roboto';
@@ -681,6 +698,15 @@ button {
   width: 75%;
   cursor: pointer;
   padding: 0 1%;
+}
+.homeContainer .parallax {
+  width: 100%;
+  height: 500px;
+  background: url('/img/class2.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .abtContainer {
   margin: 0 auto;
@@ -1408,9 +1434,9 @@ button {
   max-width: 100%;
 }
 .teamContainer .teamhero {
-  margin-top: 39px;
+  margin-top: 35px;
   max-width: 100%;
-  height: 600px;
+  height: 500px;
   margin: 0 auto;
   background: url('/img/team.jpg') no-repeat;
 }
@@ -1419,7 +1445,7 @@ button {
   line-height: 1rem;
   color: #DECEB6;
   font-family: 'Roboto';
-  padding-top: 260px;
+  padding-top: 210px;
   text-align: center;
   position: relative;
   z-index: 1;
@@ -1516,18 +1542,6 @@ button {
 }
 .teamContainer .team-cards .card2 .social-media i:hover {
   color: #253f3e;
-}
-.teamContainer .team-cards .card2 button {
-  position: absolute;
-  padding: 10px 15px;
-  width: 100px;
-  font-size: 2rem;
-  color: #800080;
-  align-self: center;
-  cursor: pointer;
-  margin: 0 auto;
-  border-radius: 10px;
-  outline: none;
 }
 @media (max-width: 800px) {
   .teamContainer .teamhero .hero h2 {
