@@ -8,6 +8,7 @@
     flex-direction: column;
     align-items: center;
     padding: 5%;
+    margin-top: 40px;
 
     p, h1 {
     color: white;
@@ -25,7 +26,7 @@
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-    max-width: 1366px;
+    //max-width: 1366px;
     background-color: @beige;
 
     section {
@@ -87,6 +88,15 @@
             h2 {
                 font-size: 3rem;
             }
+
+            span {
+                font-size: 1.5rem;
+                cursor: pointer;
+            }
+
+            span:hover {
+                color: @purple; 
+            }
         }
     }
 }
@@ -124,4 +134,8 @@
         color: darken(white, 100%);
         border-color: darken(white, 100%);
       }
+}
+
+.hidden {
+    display: none;
 }
