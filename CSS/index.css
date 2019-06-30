@@ -1372,7 +1372,7 @@ h3,
 .blogContainer section .blog {
   display: flex;
   flex-direction: column;
-  background-color: #F6F5F0;
+  background-color: #253f3e;
   margin: 15px 2%;
   width: 25%;
   padding: 2%;
@@ -1392,7 +1392,7 @@ h3,
   border-radius: 10px;
   padding: 2px;
   width: 70%;
-  color: white;
+  color: #DECEB6;
 }
 @media (max-width: 800px) {
   .blogContainer section .blog .author {
@@ -1409,14 +1409,17 @@ h3,
   }
 }
 .blogContainer section .blog p {
-  color: #253f3e;
+  color: #DECEB6;
   text-align: left;
+  font-size: 1.7rem;
 }
 .blogContainer section .blog h2 {
   font-size: 3rem;
+  color: #DECEB6;
 }
 .blogContainer section .blog span {
   font-size: 1.5rem;
+  color: #DECEB6;
   cursor: pointer;
 }
 .blogContainer section .blog span:hover {
@@ -1433,8 +1436,8 @@ h3,
   display: flex;
   align-items: center;
   text-align: center;
-  color: #F6F5F0;
-  border: 1px solid white;
+  color: #DECEB6;
+  border: 1px solid #DECEB6;
   border-radius: 15px;
   font-family: 'Roboto';
   padding: 1%;
@@ -1443,13 +1446,13 @@ h3,
   font-size: 2rem;
 }
 .tabContainer .active-tab {
-  background: #b3b3b3;
+  background: #d1c4b3;
   color: black;
   border-color: black;
 }
 .tabContainer .tab:hover {
   transition: 0.5s;
-  background: #b3b3b3;
+  background: #4b7f7d;
   color: #000000;
   border-color: #000000;
 }
