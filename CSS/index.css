@@ -526,9 +526,9 @@ html {
 .homeHead {
   margin-top: 39px;
   width: 100%;
-  height: 600px;
+  height: 500px;
   margin: 0 auto;
-  background: url('/img/home-hero.jpg') no-repeat;
+  background: url('/img/home-hero.jpg');
 }
 .homeHead .homehero h2 {
   font-size: 6rem;
@@ -639,7 +639,13 @@ header {
     width: 80%;
   }
 }
+.oddBottom i {
+  font-size: 6rem;
+  color: #DECEB6;
+  padding-bottom: 10%;
+}
 .oddBottom ul {
+  padding-top: 10%;
   font-size: 2rem;
   line-height: 2rem;
   list-style-type: circle;
@@ -648,7 +654,7 @@ header {
 .oddBottom h2,
 .oddBottom li,
 .oddBottom button {
-  color: white;
+  color: #DECEB6;
   background-color: #253f3e;
 }
 .oddBottom button:hover {
@@ -673,7 +679,13 @@ header {
     width: 80%;
   }
 }
+.evenBottom i {
+  font-size: 6rem;
+  color: #DECEB6;
+  padding-bottom: 10%;
+}
 .evenBottom ul {
+  padding-top: 10%;
   font-size: 2rem;
   line-height: 2rem;
   list-style-type: circle;
@@ -682,7 +694,7 @@ header {
 .evenBottom h2,
 .evenBottom li,
 .evenBottom button {
-  color: white ;
+  color: #DECEB6;
   background-color: #800080;
 }
 .evenBottom button:hover {
@@ -702,11 +714,25 @@ button {
 .homeContainer .parallax {
   width: 100%;
   height: 500px;
+  padding: 0 0;
   background: url('/img/class2.jpg');
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+@media (max-width: 800px) {
+  .homeContainer .parallax {
+    background-attachment: fixed;
+  }
+}
+.homeContainer,
+h3,
+#price-header {
+  font-size: 5rem;
+  margin-top: 5%;
+  color: #253f3e;
+  text-align: center;
 }
 .abtContainer {
   margin: 0 auto;
@@ -1316,7 +1342,7 @@ button {
 }
 .blogHeader p,
 .blogHeader h1 {
-  color: white;
+  color: #DECEB6;
   margin-bottom: 10px;
 }
 .blogHeader h1 {
@@ -1401,7 +1427,7 @@ button {
   margin: 0 auto 15px auto;
   width: 100%;
   justify-content: space-evenly;
-  background-color: gray;
+  background-color: #253f3e;
 }
 .tabContainer .tab {
   display: flex;

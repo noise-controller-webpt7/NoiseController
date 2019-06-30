@@ -5,9 +5,9 @@ html {
 .homeHead {
     margin-top: 39px;
     width: 100%;
-    height: 600px;
+    height: 500px;
     margin: 0 auto;
-    background: url('/img/home-hero.jpg') no-repeat;
+    background: url('/img/home-hero.jpg');
 
 
     .homehero{
@@ -137,15 +137,23 @@ header {
         width: 80%;
     }
 
+    i {
+        font-size: 6rem;
+        color: @beige;
+        padding-bottom: 10%;
+    }
+
     ul {
+        padding-top: 10%;
         font-size: 2rem;
         line-height: 2rem;
         list-style-type: circle;
         width: 80%;
+
     }
 
     h2, li, button{
-        color: white;
+        color: @beige;
         background-color: @dark;
     }
 
@@ -172,7 +180,15 @@ header {
         width: 80%;
     }
 
+    i {
+        font-size: 6rem;
+        color: @beige;
+        padding-bottom: 10%;
+    }
+    
+
     ul {
+        padding-top: 10%;
         font-size: 2rem;
         line-height: 2rem;
         list-style-type: circle;
@@ -180,7 +196,7 @@ header {
     }
 
     h2, li, button{
-        color: white ;
+        color: @beige ;
         background-color: @purple;
     }
 
@@ -199,9 +215,24 @@ button {
 .homeContainer .parallax{
     width: 100%;
     height: 500px;
+    padding: 0 0;
     background: url('/img/class2.jpg');
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    @media @tablet {
+        background-attachment: fixed;
+    }
 }
+
+.homeContainer, h3, #price-header {
+    font-size: 5rem;
+
+    margin-top: 5%;
+    color: @dark;
+    text-align: center;
+
+}
+
