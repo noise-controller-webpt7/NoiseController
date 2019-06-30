@@ -127,6 +127,10 @@
     width: 300px;
     cursor: pointer;
 }
+
+// div .dropdown{
+//     float: right;
+// }
 i.line1 {
     float: right;
     font-size: 2rem;
@@ -134,7 +138,8 @@ i.line1 {
 }
 nav.dropdown-content {
     width: 100%;
-    position: absolute;
+    float: right;
+    // position: relative;
     background: @dark;
     padding: 10% 40%;
     display: flex;
@@ -146,6 +151,7 @@ nav.dropdown-content {
 a.dropdown-link {
     width: 100%;
     text-align: center;
+    float: right;
     padding: 15px 0;
     font-size: 1.5rem;
     color: @beige;
@@ -154,13 +160,17 @@ a.dropdown-link {
 a.dropdown-link:hover{
     background: @beige;
      color: @purple;
-     padding: 25px 150px;
+     padding: 20px 150px;
+     text-align: center;
 }
 
 a.dropdown-link:last-child:hover{
     background: @beige;
      color: @purple;
-     padding: 25px 150px;
+     padding: 20px 150px;
+     border-radius: 1px solid purple;
+     text-align: center;
+
 }
 nav.dropdown-hidden {
     display: none;

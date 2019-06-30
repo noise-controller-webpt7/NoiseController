@@ -294,7 +294,7 @@ i.line1 {
 }
 nav.dropdown-content {
   width: 100%;
-  position: absolute;
+  float: right;
   background: #253f3e;
   padding: 10% 40%;
   display: flex;
@@ -305,6 +305,7 @@ nav.dropdown-content {
 a.dropdown-link {
   width: 100%;
   text-align: center;
+  float: right;
   padding: 15px 0;
   font-size: 1.5rem;
   color: #DECEB6;
@@ -313,12 +314,15 @@ a.dropdown-link {
 a.dropdown-link:hover {
   background: #DECEB6;
   color: #800080;
-  padding: 25px 150px;
+  padding: 20px 150px;
+  text-align: center;
 }
 a.dropdown-link:last-child:hover {
   background: #DECEB6;
   color: #800080;
-  padding: 25px 150px;
+  padding: 20px 150px;
+  border-radius: 1px solid purple;
+  text-align: center;
 }
 nav.dropdown-hidden {
   display: none;
@@ -475,6 +479,7 @@ footer .foot .foot-bottom p {
     width: 350px;
     align-self: center;
     font-size: 1.5rem;
+    margin-left: -7%;
   }
   footer .foot .foot-right {
     display: flex;
@@ -498,9 +503,9 @@ footer .foot .foot-bottom p {
     align-self: center;
   }
   footer .foot .foot-right .social-icons i {
-    margin-left: 5%;
-    padding: 3%;
-    font-size: 2rem;
+    margin-left: 0%;
+    padding: 4%;
+    font-size: 1.8rem;
   }
   footer .foot .foot-bottom {
     width: 100%;
@@ -912,7 +917,7 @@ header {
 }
 .contactContainer .contact {
   width: 70%;
-  padding: 4%;
+  padding: 3%;
   background: #DECEB6;
 }
 .contactContainer .contact h1 {
@@ -943,8 +948,8 @@ header {
 }
 .contactContainer .contact form input[type="text"],
 .contactContainer .contact form input[id="first"] {
-  padding: 1% 13%;
-  margin: 20px 7px;
+  padding: 1% 32%;
+  margin: 5% 1%;
   border-radius: 10px;
   background: bisque;
   color: #800080;
@@ -952,24 +957,24 @@ header {
 }
 .contactContainer .contact form input[type="text"],
 .contactContainer .contact form input[id="last"] {
-  padding: 1% 13%;
-  margin: 20px 10px;
+  padding: 1% 32%;
+  margin: 5% 1%;
   border-radius: 10px;
   background: bisque;
   color: #800080;
   font-size: 1.3rem;
 }
 .contactContainer .contact form input[type="email"] {
-  padding: 1% 13%;
-  margin: 20px 10px;
+  padding: 1% 32%;
+  margin: 5% 1%;
   border-radius: 10px;
   background: bisque;
   color: #800080;
   font-size: 1.3rem;
 }
 .contactContainer .contact form input[type="tel"] {
-  padding: 1% 13%;
-  margin: 20px 10px;
+  padding: 1% 32%;
+  margin: 5% 1%;
   border-radius: 10px;
   background: bisque;
   color: #800080;
@@ -977,7 +982,7 @@ header {
 }
 .contactContainer .contact form input[type="textarea"] {
   padding: 20% 38%;
-  margin: 20px 10px;
+  margin: 5% 1%;
   border-radius: 10px;
   background: bisque;
   color: #800080;
@@ -1252,7 +1257,7 @@ header {
   flex-wrap: wrap;
 }
 .blogContainer section .blog {
-  display: felx;
+  display: flex;
   background-color: #F6F5F0;
   margin: 15px 2%;
   width: 25%;
