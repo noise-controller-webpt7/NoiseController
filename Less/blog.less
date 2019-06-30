@@ -1,13 +1,21 @@
+.blog p, .blogHeader p {
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
 .blogHeader {
     display: flex;
     flex-direction: column;
     align-items: center;
-    //background-color: @dark;
-
     padding: 5%;
+
     p, h1 {
-    color: white !important;
-    margin-bottom: 10px !important;
+    color: white;
+    margin-bottom: 10px;
+    }
+
+    h1 {
+        font-size: 3.5rem;
     }
 }
 
@@ -17,43 +25,67 @@
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
+    max-width: 1366px;
     background-color: @beige;
-
 
     section {
         display: flex;
         justify-content: center;
+        flex-direction: row;
         margin: 1% auto;
         width: 100%;
         flex-wrap: wrap;
 
+        @media @tablet {
+            flex-direction: column;
+            align-items: center;
+        }
+
         .blog {
             display: flex;
+            flex-direction: column;
             background-color: @thirdColor;
             margin: 15px 2%;
             width: 25%;
             padding: 2%;
             text-align: center;
+
+            @media @tablet {
+                width: 90%;
+            }
             
             .author {
                 display: flex;
                 justify-content: center;
+                text-align: center;
                 margin: 5% auto;
                 background-color: @purple;
                 border-radius: 10px;
                 padding: 2px;
-                width: 50%;
+                width: 70%;
                 color: white;
+
+                @media @tablet {
+                    margin: 1% auto;
+                }
             }
 
             .date {
                 margin: 5% 0%;
                 text-align: center;
+
+                @media @tablet {
+                    margin: 1% 0;
+                }
             }
 
             p {
                 color: @dark;
                 text-align: left;
+            }
+
+            h2 {
+                font-size: 3rem;
             }
         }
     }
@@ -63,15 +95,15 @@
     display: flex;
     margin: 0 auto 15px auto;
     width: 100%;
-    height: 1.5%;
     justify-content: space-evenly;
     background-color: gray;
 
     .tab {
         display: flex;
         align-items: center;
+        text-align: center;
         color: @thirdColor;
-        border: 2px solid white;
+        border: 1px solid white;
         border-radius: 15px;
         font-family: @font;
         padding: 1%;
@@ -80,10 +112,16 @@
         font-size: 2rem;
     }
 
+    .active-tab {
+        background: lighten(gray, 20%);
+        color: black;
+        border-color: black;
+    }
+
     .tab:hover {
-        transition: 0.5s !important;
-        background: lighten(gray, 20%) !important;
-        color: darken(white, 100%) !important;
-        border-color: darken(white, 100%) !important;
+        transition: 0.5s;
+        background: lighten(gray, 20%);
+        color: darken(white, 100%);
+        border-color: darken(white, 100%);
       }
 }

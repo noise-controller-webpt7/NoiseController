@@ -526,7 +526,7 @@ html {
   color: #253f3e;
   margin-bottom: 1%;
 }
-h2 {
+.homeContainer h2 {
   font-size: 2.5rem;
   font-family: 'Roboto';
   color: #253f3e;
@@ -536,13 +536,12 @@ h3 {
   font-family: 'Roboto';
   color: #253f3e;
 }
-p {
-  font-size: 1.5rem;
+.homeContainer p {
+  font-size: 2rem;
   font-family: 'Roboto';
   color: #253f3e;
-}
-.homeContent p {
-  margin-right: 5%;
+  line-height: 2rem;
+  margin: 2% 2% 0 0;
 }
 header {
   width: 80%;
@@ -554,22 +553,57 @@ header {
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
+  max-width: 1366px;
   background-color: #DECEB6;
 }
 .bodyContainer .homeContainer {
   display: flex;
   justify-content: center;
-  margin: 1% auto 0;
+  flex-direction: row;
+  margin: 0 auto;
   width: 100%;
-  padding: 5% 1% 3%;
+  padding: 3% 3% 2%;
+}
+@media (max-width: 800px) {
+  .bodyContainer .homeContainer {
+    flex-direction: column;
+    align-items: center;
+    flex-direction: column-reverse;
+    margin: 30px 0 0;
+  }
+  .bodyContainer .homeContainer:first-child {
+    flex-direction: column;
+  }
+  .bodyContainer .homeContainer:last-child {
+    flex-direction: column;
+  }
 }
 .bodyContainer .homeContainer .homeContent {
   width: 60%;
+  padding: 0 4%;
+}
+@media (max-width: 800px) {
+  .bodyContainer .homeContainer .homeContent {
+    width: 90%;
+    text-align: center;
+  }
 }
 .bodyContainer .homeContainer .homeImg {
   width: 30%;
+  align-self: center;
 }
-.bodyContainer .homeContainer .oddBottom {
+.bodyContainer .homeContainer .homeImg img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+@media (max-width: 800px) {
+  .bodyContainer .homeContainer .homeImg {
+    width: 90%;
+    margin: 30px 0;
+  }
+}
+.oddBottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -577,66 +611,73 @@ header {
   text-align: left;
   background-color: #253f3e;
   padding: 2%;
-  width: 20%;
+  width: 25%;
   margin-bottom: 30px;
 }
-.bodyContainer .homeContainer .oddBottom ul {
-  font-size: 1.5rem;
-  line-height: 3rem;
-  align-self: flex-start;
-  list-style-type: circle;
+@media (max-width: 800px) {
+  .oddBottom {
+    width: 80%;
+  }
 }
-.bodyContainer .homeContainer .oddBottom h2,
-.bodyContainer .homeContainer .oddBottom li,
-.bodyContainer .homeContainer .oddBottom button {
+.oddBottom ul {
+  font-size: 2rem;
+  line-height: 2rem;
+  list-style-type: circle;
+  width: 80%;
+}
+.oddBottom h2,
+.oddBottom li,
+.oddBottom button {
   color: white;
   background-color: #253f3e;
 }
-.bodyContainer .homeContainer .oddBottom button:hover {
-  transition: 0.5s !important;
-  background: #4b7f7d !important;
-  color: #000000 !important;
-  border-color: #000000 !important;
+.oddBottom button:hover {
+  transition: 0.5s;
+  background: #4b7f7d;
+  color: #000000;
+  border-color: #000000;
 }
-.bodyContainer .homeContainer .evenBottom {
+.evenBottom {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: left;
   background-color: #800080;
   padding: 2%;
-  width: 20%;
-  margin: 0 10% 30px;
+  width: 25%;
+  margin: 0 5% 30px;
 }
-.bodyContainer .homeContainer .evenBottom ul {
-  font-size: 1.5rem;
-  line-height: 3rem;
-  align-self: flex-start;
+@media (max-width: 800px) {
+  .evenBottom {
+    width: 80%;
+  }
+}
+.evenBottom ul {
+  font-size: 2rem;
+  line-height: 2rem;
   list-style-type: circle;
+  width: 80%;
 }
-.bodyContainer .homeContainer .evenBottom h2,
-.bodyContainer .homeContainer .evenBottom li,
-.bodyContainer .homeContainer .evenBottom button {
+.evenBottom h2,
+.evenBottom li,
+.evenBottom button {
   color: white ;
   background-color: #800080;
 }
-.bodyContainer .homeContainer .evenBottom button:hover {
-  transition: 0.5s !important;
-  background: #e600e6 !important;
-  color: #000000 !important;
-  border-color: #000000 !important;
+.evenBottom button:hover {
+  transition: 0.5s;
+  background: #b300b3;
+  color: #000000;
+  border-color: #000000;
 }
-.bodyContainer .homeContainer img {
-  height: 200px;
-  border-radius: 10px;
-}
-.bodyContainer .homeContainer button {
+button {
   border: solid white 1px;
   border-radius: 10px;
   font-size: 2rem;
-  width: 70%;
+  width: 75%;
   cursor: pointer;
+  padding: 0 1%;
 }
 .abtContainer {
   margin: 0 auto;
@@ -1231,6 +1272,11 @@ header {
     margin-bottom: 20%;
   }
 }
+.blog p,
+.blogHeader p {
+  font-size: 2rem;
+  line-height: 2rem;
+}
 .blogHeader {
   display: flex;
   flex-direction: column;
@@ -1239,62 +1285,93 @@ header {
 }
 .blogHeader p,
 .blogHeader h1 {
-  color: white !important;
-  margin-bottom: 10px !important;
+  color: white;
+  margin-bottom: 10px;
+}
+.blogHeader h1 {
+  font-size: 3.5rem;
 }
 .blogContainer {
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
+  max-width: 1366px;
   background-color: #DECEB6;
 }
 .blogContainer section {
   display: flex;
   justify-content: center;
+  flex-direction: row;
   margin: 1% auto;
   width: 100%;
   flex-wrap: wrap;
 }
+@media (max-width: 800px) {
+  .blogContainer section {
+    flex-direction: column;
+    align-items: center;
+  }
+}
 .blogContainer section .blog {
   display: flex;
+  flex-direction: column;
   background-color: #F6F5F0;
   margin: 15px 2%;
   width: 25%;
   padding: 2%;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .blogContainer section .blog {
+    width: 90%;
+  }
+}
 .blogContainer section .blog .author {
   display: flex;
   justify-content: center;
+  text-align: center;
   margin: 5% auto;
   background-color: #800080;
   border-radius: 10px;
   padding: 2px;
-  width: 50%;
+  width: 70%;
   color: white;
+}
+@media (max-width: 800px) {
+  .blogContainer section .blog .author {
+    margin: 1% auto;
+  }
 }
 .blogContainer section .blog .date {
   margin: 5% 0%;
   text-align: center;
 }
+@media (max-width: 800px) {
+  .blogContainer section .blog .date {
+    margin: 1% 0;
+  }
+}
 .blogContainer section .blog p {
   color: #253f3e;
   text-align: left;
+}
+.blogContainer section .blog h2 {
+  font-size: 3rem;
 }
 .tabContainer {
   display: flex;
   margin: 0 auto 15px auto;
   width: 100%;
-  height: 1.5%;
   justify-content: space-evenly;
   background-color: gray;
 }
 .tabContainer .tab {
   display: flex;
   align-items: center;
+  text-align: center;
   color: #F6F5F0;
-  border: 2px solid white;
+  border: 1px solid white;
   border-radius: 15px;
   font-family: 'Roboto';
   padding: 1%;
@@ -1302,11 +1379,16 @@ header {
   margin: 3px 0px;
   font-size: 2rem;
 }
+.tabContainer .active-tab {
+  background: #b3b3b3;
+  color: black;
+  border-color: black;
+}
 .tabContainer .tab:hover {
-  transition: 0.5s !important;
-  background: #b3b3b3 !important;
-  color: #000000 !important;
-  border-color: #000000 !important;
+  transition: 0.5s;
+  background: #b3b3b3;
+  color: #000000;
+  border-color: #000000;
 }
 .teamContainer {
   max-width: 100%;
