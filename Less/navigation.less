@@ -1,11 +1,17 @@
 .nav-header{
     display: flex;
     flex-direction: row;
-    height: auto;
+    height: 45px;
     justify-content:space-between;
     align-content: center;
     width: 100%;
-    margin: 10px 0;
+    margin: 0px 0px 10px;
+    padding-bottom: 10px;
+    // overflow: hidden;
+    position: fixed;
+    background: @purple;
+    opacity: 0.9;
+    z-index: 10;
 
     .dropdown{
         display:none;
@@ -38,7 +44,6 @@
             align-content: space-between;
             align-items: center;
             padding-top: 10px;
-            padding-right: 10%;
             .center();
 
            
@@ -49,10 +54,10 @@
         }
 
         a:last-child {
-            border: 0px solid @purple;
-            padding: 1rem 3rem;
+            // border: 0px solid @purple;
+            // padding: 1rem 3rem;
             margin-top: 10px;
-            border-radius: 10px;
+            border-radius: 0px;
             align-items: center;
             .center();
             white-space: nowrap;
@@ -62,7 +67,6 @@
         a:last-child:hover{
             background: @beige;
             color: @purple;
-            border: 1px solid @beige;
         }
 
 
@@ -122,10 +126,12 @@
 }
 .nav-header .dropdown {
     display: initial;
-    z-index: 2;
-    position: absolute;
+    z-index: 99;
+    position: fixed;
     width: 300px;
     cursor: pointer;
+    top: 10px;
+    right: 0;
 }
 
 // div .dropdown{
@@ -141,11 +147,11 @@ nav.dropdown-content {
     float: right;
     // position: relative;
     background: @dark;
-    padding: 10% 40%;
+    padding: 5% 40%;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 10px;
+    margin-top: 39px;
 }
 
 a.dropdown-link {

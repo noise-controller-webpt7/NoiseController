@@ -192,11 +192,16 @@ img {
 .nav-header {
   display: flex;
   flex-direction: row;
-  height: auto;
+  height: 45px;
   justify-content: space-between;
   align-content: center;
   width: 100%;
-  margin: 10px 0;
+  margin: 0px 0px 10px;
+  padding-bottom: 10px;
+  position: fixed;
+  background: #800080;
+  opacity: 0.9;
+  z-index: 10;
 }
 .nav-header .dropdown {
   display: none;
@@ -224,7 +229,6 @@ img {
   align-content: space-between;
   align-items: center;
   padding-top: 10px;
-  padding-right: 10%;
   justify-content: center;
   align-content: center;
 }
@@ -232,10 +236,8 @@ img {
   white-space: nowrap;
 }
 .nav-header nav a:last-child {
-  border: 0px solid #800080;
-  padding: 1rem 3rem;
   margin-top: 10px;
-  border-radius: 10px;
+  border-radius: 0px;
   align-items: center;
   justify-content: center;
   align-content: center;
@@ -244,7 +246,6 @@ img {
 .nav-header nav a:last-child:hover {
   background: #DECEB6;
   color: #800080;
-  border: 1px solid #DECEB6;
 }
 @media (max-width: 800px) {
   .nav-header {
@@ -282,10 +283,12 @@ img {
 }
 .nav-header .dropdown {
   display: initial;
-  z-index: 2;
-  position: absolute;
+  z-index: 99;
+  position: fixed;
   width: 300px;
   cursor: pointer;
+  top: 10px;
+  right: 0;
 }
 i.line1 {
   float: right;
@@ -296,11 +299,11 @@ nav.dropdown-content {
   width: 100%;
   float: right;
   background: #253f3e;
-  padding: 10% 40%;
+  padding: 5% 40%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 10px;
+  margin-top: 39px;
 }
 a.dropdown-link {
   width: 100%;
@@ -461,6 +464,7 @@ footer .foot .foot-bottom p {
   footer .foot .foot-left {
     width: 100%;
     background: #253f3e;
+    padding-left: 0;
     justify-content: center;
     align-content: center;
   }
@@ -553,6 +557,7 @@ header {
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
+  margin-top: 50px;
   max-width: 1366px;
   background-color: #DECEB6;
 }
@@ -952,6 +957,7 @@ button {
   margin: 0 auto;
   justify-content: center;
   align-content: center;
+  margin-top: 50px;
   display: flex;
   justify-content: space-around;
   padding-right: 5%;
@@ -1394,8 +1400,9 @@ button {
   max-width: 100%;
 }
 .teamContainer .teamhero {
-  width: 100%;
+  max-width: 1500px;
   height: 600px;
+  margin: 0 auto;
   background: url('/img/team.jpg') no-repeat;
 }
 .teamContainer .teamhero .hero h2 {
@@ -1406,7 +1413,7 @@ button {
   padding-top: 260px;
   text-align: center;
   position: relative;
-  z-index: 3;
+  z-index: 1;
 }
 .teamContainer .team-cards {
   display: flex;
@@ -1500,4 +1507,69 @@ button {
 }
 .teamContainer .team-cards .card2 .social-media i:hover {
   color: #253f3e;
+}
+@media (max-width: 800px) {
+  .teamContainer .teamhero .hero h2 {
+    font-size: 5rem;
+    line-height: 5rem;
+    padding-top: 220px;
+  }
+  .teamContainer .team-cards .card1 {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    background: #253f3e;
+  }
+  .teamContainer .team-cards .card1 h2 {
+    font-size: 3rem;
+    line-height: 2rem;
+    color: #DECEB6;
+  }
+  .teamContainer .team-cards .card1 img {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 10px 10px 0 rgba(128, 0, 128, 0.5);
+  }
+  .teamContainer .team-cards .card1 p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0 5%;
+    color: #DECEB6;
+  }
+  .teamContainer .team-cards .card1 .social-media i {
+    font-size: 3rem;
+    color: #DECEB6;
+  }
+  .teamContainer .team-cards .card1 .social-media i:hover {
+    color: #800080;
+  }
+  .teamContainer .team-cards .card2 {
+    display: flex;
+    flex-flow: column wrap;
+    width: 100%;
+    background: #800080;
+  }
+  .teamContainer .team-cards .card2 h2 {
+    font-size: 3rem;
+    line-height: 2rem;
+    color: #DECEB6;
+  }
+  .teamContainer .team-cards .card2 img {
+    width: 400px;
+    height: 400px;
+    box-shadow: 0 10px 10px 0 rgba(12, 39, 1, 0.5);
+  }
+  .teamContainer .team-cards .card2 p {
+    font-size: 1.5rem;
+    line-height: 2rem;
+    padding: 0 5%;
+    color: #DECEB6;
+  }
+  .teamContainer .team-cards .card2 .social-media i {
+    font-size: 3rem;
+    color: #DECEB6;
+  }
+  .teamContainer .team-cards .card2 .social-media i:hover {
+    color: #253f3e;
+  }
 }
