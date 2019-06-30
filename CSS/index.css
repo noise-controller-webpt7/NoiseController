@@ -556,8 +556,7 @@ header {
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  margin-top: 50px;
-  max-width: 1366px;
+  margin-top: 45px;
   background-color: #DECEB6;
 }
 .bodyContainer .homeContainer {
@@ -1287,6 +1286,7 @@ button {
   flex-direction: column;
   align-items: center;
   padding: 5%;
+  margin-top: 40px;
 }
 .blogHeader p,
 .blogHeader h1 {
@@ -1301,7 +1301,6 @@ button {
   flex-direction: column;
   margin: 0 auto;
   width: 100%;
-  max-width: 1366px;
   background-color: #DECEB6;
 }
 .blogContainer section {
@@ -1364,6 +1363,13 @@ button {
 .blogContainer section .blog h2 {
   font-size: 3rem;
 }
+.blogContainer section .blog span {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.blogContainer section .blog span:hover {
+  color: #800080;
+}
 .tabContainer {
   display: flex;
   margin: 0 auto 15px auto;
@@ -1394,6 +1400,9 @@ button {
   background: #b3b3b3;
   color: #000000;
   border-color: #000000;
+}
+.hidden {
+  display: none;
 }
 .teamContainer {
   max-width: 100%;

@@ -17,25 +17,27 @@
 
 // };
 
-class Expander {
+class Expand {
     constructor(elm) {
     this.elm = elm;
-
-    this.revealButton = elm.querySelector('expand') ;
-
-    this.revealButton.addEventListener('click', () =>{
+    console.log(elm);
+    //this.button = elm.querySelector('.expand');
+    this.article = elm.querySelector('.article')
+    console.log(this.article)
+    this.elm.addEventListener('click', () =>{
         this.revealExpander();
-      });
+    });
 
 }
 
     revealExpander() {
-        this.elm.classList.toggle('reveal');
+        this.article.classList.toggle('hidden');
+        console.log("toggle")
     }
 }
 
-let revealer = document.querySelectorAll('social-media');
+let revealer = document.querySelectorAll('.blog');
 
 revealer.forEach(icon => {
-    new Expander(icon);
+    new Expand(icon);
 });
