@@ -65,8 +65,10 @@
         }
 
         a:last-child:hover{
-            background: @beige;
-            color: @purple;
+            background: @purple;
+            color: @beige;
+            align-items: center;
+
         }
 
 
@@ -102,7 +104,6 @@
            
     
             a:last-child {
-                padding: 1rem 1.8rem;
                 border: 0px solid @dark;
                 margin-top: 0px;
                 align-self: center;
@@ -112,12 +113,17 @@
             a:hover{
                 background: @beige;
                 color: @purple;
+                align-items: center;
+
+                
             }
 
             a:last-child:hover{
                 background: @purple;
                 color: @beige;
                 border: 0px solid @purple;
+                align-items: center;
+
             }
     
         }
@@ -151,7 +157,7 @@ nav.dropdown-content {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 39px;
+    margin-top: 35px;
 }
 
 a.dropdown-link {
@@ -207,10 +213,7 @@ nav.dropdown-hidden {
            
     
             a:last-child {
-                padding: 1rem 1.8rem;
                 margin-top: 10px;
-                border-radius: 10px;
-                margin-right: 8%;
     
             }
     

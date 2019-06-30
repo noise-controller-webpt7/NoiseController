@@ -9,11 +9,8 @@ class Dropdown {
       this.button.style.fontSize="3rem";
       this.button.style.position="fixed";
       this.button.style.right="10%";
-
-      console.log(this.button);
       
       this.content = document.querySelector(".dropdown-content");
-      console.log(this.content);
       
       this.button.addEventListener('click', () =>{
         this.toggleContent();
@@ -29,13 +26,3 @@ class Dropdown {
   
 document.querySelectorAll('.dropdown').forEach( dropdown => new Dropdown(dropdown));
 
-
-// new class for reveal on team page
-
-// class Reveal extends Dropdown {
-//   super(Dropdown);
-//   constructor(el) {
-//       this.el = el;
-      
-// }
-// }
