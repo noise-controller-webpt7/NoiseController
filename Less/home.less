@@ -2,6 +2,31 @@ html {
     background-image: linear-gradient(to bottom right, @bgColor, @bgColor2)
 }
 
+.homeHead {
+    margin-top: 39px;
+    width: 100%;
+    height: 500px;
+    margin: 0 auto;
+    background: url('/img/home-hero.jpg');
+
+
+    .homehero{
+        
+        h2 {
+            font-size: 6rem;
+            line-height: 1rem;
+            color: rgb(190, 58, 190);
+            font-family: @font;
+            padding-top: 260px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+
+         }
+    }
+
+}
+
 .homeContent h1 {
     font-size: 3rem;
     font-family: @font;
@@ -112,15 +137,23 @@ header {
         width: 80%;
     }
 
+    i {
+        font-size: 6rem;
+        color: @beige;
+        padding-bottom: 10%;
+    }
+
     ul {
+        padding-top: 10%;
         font-size: 2rem;
         line-height: 2rem;
         list-style-type: circle;
         width: 80%;
+
     }
 
     h2, li, button{
-        color: white;
+        color: @beige;
         background-color: @dark;
     }
 
@@ -147,7 +180,15 @@ header {
         width: 80%;
     }
 
+    i {
+        font-size: 6rem;
+        color: @beige;
+        padding-bottom: 10%;
+    }
+    
+
     ul {
+        padding-top: 10%;
         font-size: 2rem;
         line-height: 2rem;
         list-style-type: circle;
@@ -155,7 +196,7 @@ header {
     }
 
     h2, li, button{
-        color: white ;
+        color: @beige ;
         background-color: @purple;
     }
 
@@ -170,3 +211,28 @@ header {
 button {
     .btn();
 }
+
+.homeContainer .parallax{
+    width: 100%;
+    height: 500px;
+    padding: 0 0;
+    background: url('/img/class2.jpg');
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    @media @tablet {
+        background-attachment: fixed;
+    }
+}
+
+.homeContainer, h3, #price-header {
+    font-size: 5rem;
+
+    margin-top: 5%;
+    color: @dark;
+    text-align: center;
+
+}
+

@@ -11,7 +11,7 @@
     margin-top: 40px;
 
     p, h1 {
-    color: white;
+    color: @beige;
     margin-bottom: 10px;
     }
 
@@ -26,7 +26,6 @@
     flex-direction: column;
     margin: 0 auto;
     width: 100%;
-    //max-width: 1366px;
     background-color: @beige;
 
     section {
@@ -45,7 +44,7 @@
         .blog {
             display: flex;
             flex-direction: column;
-            background-color: @thirdColor;
+            background-color: @dark;
             margin: 15px 2%;
             width: 25%;
             padding: 2%;
@@ -64,7 +63,7 @@
                 border-radius: 10px;
                 padding: 2px;
                 width: 70%;
-                color: white;
+                color: @beige;
 
                 @media @tablet {
                     margin: 1% auto;
@@ -81,16 +80,19 @@
             }
 
             p {
-                color: @dark;
+                color: @beige;
                 text-align: left;
+                font-size: 1.7rem;
             }
 
             h2 {
                 font-size: 3rem;
+                color: @beige;
             }
 
             span {
                 font-size: 1.5rem;
+                color: @beige;
                 cursor: pointer;
             }
 
@@ -106,14 +108,14 @@
     margin: 0 auto 15px auto;
     width: 100%;
     justify-content: space-evenly;
-    background-color: gray;
+    background-color: @dark;
 
     .tab {
         display: flex;
         align-items: center;
         text-align: center;
-        color: @thirdColor;
-        border: 1px solid white;
+        color: @beige;
+        border: 1px solid @beige;
         border-radius: 15px;
         font-family: @font;
         padding: 1%;
@@ -123,14 +125,14 @@
     }
 
     .active-tab {
-        background: lighten(gray, 20%);
+        background: lighten( #AA9274, 20%);
         color: black;
         border-color: black;
     }
 
     .tab:hover {
         transition: 0.5s;
-        background: lighten(gray, 20%);
+        background: lighten(@dark, 20%);
         color: darken(white, 100%);
         border-color: darken(white, 100%);
       }
